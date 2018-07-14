@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v7.0.0 <https://qwtel.com/hydejack/>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Config | Purva Tendulkar</title>
+<meta property="og:title" content="Config" />
+<meta name="author" content="Purva Tendulkar" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Once Jekyll is running, you can start with basic configuration by adding various entries to _config.yml." />
+<meta property="og:description" content="Once Jekyll is running, you can start with basic configuration by adding various entries to _config.yml." />
+<link rel="canonical" href="http://localhost:4000/details/config/" />
+<meta property="og:url" content="http://localhost:4000/details/config/" />
+<meta property="og:site_name" content="Purva Tendulkar" />
+<script type="application/ld+json">
+{"name":null,"description":"Once Jekyll is running, you can start with basic configuration by adding various entries to _config.yml.","author":{"@type":"Person","name":"Purva Tendulkar"},"@type":"WebPage","url":"http://localhost:4000/details/config/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.png"},"name":"Purva Tendulkar"},"image":null,"headline":"Config","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="">
+  
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Purva Tendulkar">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="Purva Tendulkar">
+<meta name="msapplication-config" content="/assets/ieconfig.xml">
+
+
+
+<meta name="generator" content="Hydejack v7.0.0" />
+
+
+<link rel="alternate" type="application/atom+xml" title="Purva Tendulkar Feed" href="http://localhost:4000/feed.xml">
+
+
+<link rel="alternate" href="http://localhost:4000/details/config/" hreflang="en">
+
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon.png">
+
+<link rel="manifest" href="/assets/manifest.json">
+
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+
+
+<link id="_katexJS"  rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.js">
+<link id="_katexCSS" rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css">
+
+<script>
+  function stdOnEnd(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function ieOnEnd(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}window.setRelStylesheet=function(n){function e(){this.rel="stylesheet"}var o=document.getElementById(n);o.addEventListener?o.addEventListener("load",e,!1):o.onload=e},window._loaded=!1,window.loadJSDeferred=function(n,e){function o(){window._loaded=!0;var o=document.createElement("script");o.src=n,e&&(("onload"in o?stdOnEnd:ieOnEnd)(o,e),o.onload||stdOnEnd(o,e));var t=document.scripts[0];t.parentNode.insertBefore(o,t)}window._loaded?o():window.addEventListener?window.addEventListener("load",o,!1):window.onload=o};
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+
+  window._noPushState = false;
+  window._noDrawer = false;
+</script>
+
+<!--[if gt IE 8]><!---->
+
+
+<script>
+  WebFontConfig = {
+    
+    google: {
+      families: ['Roboto+Slab:700','Noto+Sans:400,400i,700,700i']
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  };
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = "/assets/bower_components/webfontloader/webfontloader.js";
+    s.parentNode.insertBefore(wf, s);
+  }(document));
+</script>
+<!--<![endif]-->
+
+<noscript>
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i">
+    <style>
+      html { font-family: 'Noto Sans', Helvetica, Arial, sans-serif }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Roboto Slab', Helvetica, Arial, sans-serif }
+    </style>
+  
+
+  <link rel="stylesheet" href="/assets/icomoon/style.css">
+</noscript>
+
+<!--[if gt IE 8]><!---->
+
+
+
+  <link rel="stylesheet" href="/assets/css/hydejack.css?v=7.0.0">
+
+
+
+<style id="_pageStyle">
+
+.content a:not(.btn){color:#4fb1ba;border-color:rgba(79,177,186,0.2)}.content a:not(.btn):hover{border-color:#4fb1ba}:focus{outline-color:#4fb1ba}.btn-primary{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 3px rgba(79,177,186,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#409ba3;border-color:#409ba3}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#409ba3;border-color:#409ba3}::selection{color:#fff;background:#4fb1ba}::-moz-selection{color:#fff;background:#4fb1ba}
+
+</style>
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body>
+  <div class="navbar fixed-top">
+  <div class="content">
+    <div class="nav-btn-bar">
+      <span class="sr-only">Jump to:</span>
+      <a id="_menu" class="nav-btn no-hover" href="#_navigation">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<hy-push-state>
+  <main
+    id="_main"
+    class="content fade-in layout-page"
+    role="main"
+    data-color="#4fb1ba"
+    
+      data-image="assets/img/sidebar-bg.jpg"
+      data-overlay
+    
+    >
+    <article class="page" role="article">
+  <header>
+    <h1 class="page-title">Config</h1>
+    
+
+
+
+  
+    <p class="message" >
+      Once Jekyll is running, you can start with basic configuration by adding various entries to <code class="highlighter-rouge">_config.yml</code>.
+
+    </p>
+  
+
+
+  </header>
+
+  <p>Once Jekyll is running, you can start with basic configuration by adding various entries to <code class="highlighter-rouge">_config.yml</code>.
+Besides the documentation here, the <a href="https://github.com/qwtel/hydejack/blob/master/_config.yml">default <code class="highlighter-rouge">_config.yml</code></a>
+is also documented extensively.</p>
+
+<p class="message"><strong>NOTE</strong>: When making changes to <code class="highlighter-rouge">_config.yml</code>, it is necessary to restart the Jekyll process for the changes to take effect.</p>
+
+<h2 class="no_toc" id="table-of-contents">Table of Contents</h2>
+<ol id="markdown-toc">
+  <li><a href="#setting-url-and-baseurl" id="markdown-toc-setting-url-and-baseurl">Setting <code class="highlighter-rouge">url</code> and <code class="highlighter-rouge">baseurl</code></a>    <ol>
+      <li><a href="#github-pages" id="markdown-toc-github-pages">GitHub Pages</a></li>
+    </ol>
+  </li>
+  <li><a href="#changing-accent-colors-and-sidebar-images" id="markdown-toc-changing-accent-colors-and-sidebar-images">Changing accent colors and sidebar images</a></li>
+  <li><a href="#changing-fonts" id="markdown-toc-changing-fonts">Changing fonts</a>    <ol>
+      <li><a href="#using-safe-web-fonts" id="markdown-toc-using-safe-web-fonts">Using safe web fonts</a></li>
+    </ol>
+  </li>
+  <li><a href="#choosing-a-blog-layout" id="markdown-toc-choosing-a-blog-layout">Choosing a blog layout</a></li>
+  <li><a href="#adding-an-author" id="markdown-toc-adding-an-author">Adding an author</a>    <ol>
+      <li><a href="#adding-an-authors-picture" id="markdown-toc-adding-an-authors-picture">Adding an author’s picture</a></li>
+      <li><a href="#adding-social-media-icons" id="markdown-toc-adding-social-media-icons">Adding social media icons</a></li>
+      <li><a href="#adding-an-email-or-rss-icon" id="markdown-toc-adding-an-email-or-rss-icon">Adding an email or RSS icon</a></li>
+    </ol>
+  </li>
+  <li><a href="#enabling-comments" id="markdown-toc-enabling-comments">Enabling comments</a></li>
+  <li><a href="#enabling-google-analytics" id="markdown-toc-enabling-google-analytics">Enabling Google Analytics</a></li>
+  <li><a href="#changing-built-in-strings" id="markdown-toc-changing-built-in-strings">Changing built-in strings</a></li>
+</ol>
+
+<h2 id="setting-url-and-baseurl">Setting <code class="highlighter-rouge">url</code> and <code class="highlighter-rouge">baseurl</code></h2>
+<p>The first order of business should be to set the correct <code class="highlighter-rouge">url</code> and <code class="highlighter-rouge">baseurl</code> values in <code class="highlighter-rouge">_config.yml</code>.</p>
+
+<p>The <code class="highlighter-rouge">url</code> is the domain of your site, including the protocol (<code class="highlighter-rouge">http</code> or <code class="highlighter-rouge">https</code>). For this site, it is</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s">https://qwtel.com</span>
+</code></pre></div></div>
+
+<p>If your entire Jekyll blog is hosted in a subdirectory of your page, provide the path in <code class="highlighter-rouge">baseurl</code> with a leading <code class="highlighter-rouge">/</code>, but no trailing <code class="highlighter-rouge">/</code>,
+e.g.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">baseurl</span><span class="pi">:</span> <span class="s">/hydejack</span>
+</code></pre></div></div>
+
+<p>Otherwise, provide the empty string <code class="highlighter-rouge">''</code></p>
+
+<h3 id="github-pages">GitHub Pages</h3>
+<p>When hosting on <a href="https://pages.github.com/">GitHub Pages</a> (unless you are using a custom domain), the <code class="highlighter-rouge">url</code> is</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s">https://&lt;username&gt;.github.io</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">baseurl</code> depends on the kind of page you are hosting.</p>
+
+<ul>
+  <li>When hosting a <em>user or organization page</em>, use the empty string.</li>
+  <li>When hosting <em>project page</em>, use <code class="highlighter-rouge">/&lt;reponame&gt;</code>.</li>
+</ul>
+
+<p>For for information on the types of pages you can host on GitHub, see the
+<a href="https://help.github.com/articles/user-organization-and-project-pages/">GitHub Help article</a>.</p>
+
+<h2 id="changing-accent-colors-and-sidebar-images">Changing accent colors and sidebar images</h2>
+<p>Hydejack allows you to choose the background image of the sidebar, as well as the accent color
+(color of the links, selection and focus outline, etc…) on a per-page, per-category, per-tag, per-author and global basis.</p>
+
+<p>Set the fallback values in <code class="highlighter-rouge">_config.yml</code>, which are used should no other rule (page, category, tag, author) apply:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">accent_image</span><span class="pi">:</span> <span class="s">/assets/img/sidebar-bg.jpg</span>
+<span class="na">accent_color</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#A85641'</span>
+</code></pre></div></div>
+
+<p class="message"><strong>NOTE</strong>: I recommend using a blurred image in order for the text to remain readable.
+If you save a blurred image as JPG, it will also drastically reduce its file size.</p>
+
+<p>The <code class="highlighter-rouge">accent_image</code> is optional. If you leave it out, Hydejack will use the <code class="highlighter-rouge">accent_color</code> as background (slightly darkened).
+You can also provide a single color instead of an image like this:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">accent_image</span><span class="pi">:</span>
+  <span class="na">background</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#202020'</span> <span class="c1"># provide a valid CSS background value</span>
+</code></pre></div></div>
+
+<h2 id="changing-fonts">Changing fonts</h2>
+<p>Hydejack lets you configure the font of regular text and headlines and it has built-in support for Google Fonts.
+There are three keys in <code class="highlighter-rouge">_config.yml</code> associated with it: <code class="highlighter-rouge">font</code>, <code class="highlighter-rouge">font_heading</code> and <code class="highlighter-rouge">google_fonts</code>.
+The defaults are:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">font</span><span class="pi">:</span>         <span class="s2">"</span><span class="s">'Noto</span><span class="nv"> </span><span class="s">Sans',</span><span class="nv"> </span><span class="s">Helvetica,</span><span class="nv"> </span><span class="s">Arial,</span><span class="nv"> </span><span class="s">sans-serif"</span>
+<span class="na">font_heading</span><span class="pi">:</span> <span class="s2">"</span><span class="s">'Roboto</span><span class="nv"> </span><span class="s">Slab',</span><span class="nv"> </span><span class="s">Helvetica,</span><span class="nv"> </span><span class="s">Arial,</span><span class="nv"> </span><span class="s">sans-serif"</span>
+<span class="na">google_fonts</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Roboto+Slab:700|Noto+Sans:400,400i,700,700i"</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">font</code> and <code class="highlighter-rouge">font_heading</code> must be valid CSS <code class="highlighter-rouge">font-family</code> values. When using Google Fonts make sure they consist of at least two fonts
+(everything except the first entry will be used as a fallback until the fonts have completed loading).</p>
+
+<p>The <code class="highlighter-rouge">google_fonts</code> key is the string necessary to fetch the fonts from Google.
+You can get it from the download page at <a href="https://fonts.google.com">Google Fonts</a> after you’ve selected one or more fonts:</p>
+
+<p><img src="/assets/img/docs/google-fonts.png" alt="Where to get the google_fonts string" /></p>
+
+<h3 id="using-safe-web-fonts">Using safe web fonts</h3>
+<p>If you prefer not to use Google Fonts and use <a href="http://www.cssfontstack.com/">safe web fonts</a> instead,
+set <code class="highlighter-rouge">no_google_fonts</code> to <code class="highlighter-rouge">true</code>:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
+  <span class="na">no_google_fonts</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>In this case, <code class="highlighter-rouge">font</code> and <code class="highlighter-rouge">font_heading</code> do not have to contain more than one font.
+You may also remove the <code class="highlighter-rouge">google_fonts</code> key in this case.</p>
+
+<h2 id="choosing-a-blog-layout">Choosing a blog layout</h2>
+<p>Hydejack features two layouts for showing your blog posts.</p>
+
+<ul>
+  <li>The <a href="https://qwtel.com/hydejack/posts/"><code class="highlighter-rouge">list</code> layout</a> only shows the title and groups the posts by year of publication.</li>
+  <li>The <a href="https://qwtel.com/hydejack/blog/"><code class="highlighter-rouge">blog</code> layout</a> is a traditional paginated layout and shows the title and an excerpt of each post.</li>
+</ul>
+
+<p>In order to use the <code class="highlighter-rouge">list</code> layout add the following front-matter to a new markdown file:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">list</span>
+<span class="na">title</span><span class="pi">:</span>  <span class="s">Home</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>If you want to use the <code class="highlighter-rouge">blog</code> layout, you need to add the <code class="highlighter-rouge">paginate</code> and <code class="highlighter-rouge">paginate_path</code> keys to your config file, e.g.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">paginate</span><span class="pi">:</span>      <span class="s">5</span>
+<span class="na">paginate_path</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/page-:num/'</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">blog</code> layout needs to be applied to a file with the <code class="highlighter-rouge">.html</code> file extension
+and the <code class="highlighter-rouge">paginate_path</code> needs to match the path to the <code class="highlighter-rouge">index.html</code> file,
+i.e. if you want the blog to appear at <code class="highlighter-rouge">/blog/</code>, put a <code class="highlighter-rouge">index.html</code> in the <code class="highlighter-rouge">blog</code> dir and set <code class="highlighter-rouge">paginate_path</code> to be <code class="highlighter-rouge">/blog/page-:num/</code>.</p>
+
+<p>For more information see <a href="https://jekyllrb.com/docs/pagination/">Pagination</a>.</p>
+
+<h2 id="adding-an-author">Adding an author</h2>
+<p>As a bare minimum, you should add an <code class="highlighter-rouge">author</code> key with a <code class="highlighter-rouge">name</code> and <code class="highlighter-rouge">email</code> sub-key
+(used by the <a href="https://github.com/jekyll/jekyll-feed">feed plugin</a>) to to your config file:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span>  <span class="s">Florian Klampfer</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">mail@qwtel.com</span>
+</code></pre></div></div>
+
+<p>If you would like the author to be displayed in the about section below a post or project*,
+as well as the top of about and welcome* pages, add an <code class="highlighter-rouge">about</code> key and provide some markdown content.
+I recommend using the YAML pipe <code class="highlighter-rouge">|</code> syntax, so you can include multiple paragraphs:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span>  <span class="s">Florian Klampfer</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">mail@qwtel.com</span>
+  <span class="na">about</span><span class="pi">:</span> <span class="pi">|</span>
+    <span class="no">Hi, I'm Florian or @qwtel...</span>
+
+    <span class="no">This is another paragraph.</span>
+</code></pre></div></div>
+
+<h3 id="adding-an-authors-picture">Adding an author’s picture</h3>
+<p>If you’d like for the author’s picture to appear in addition the the about text (see above),
+you have to provide an URL to the <code class="highlighter-rouge">picture</code> key:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">picture</span><span class="pi">:</span>  <span class="s">/assets/img/me.jpg</span>
+</code></pre></div></div>
+
+<p>If you’d like to provide multiple versions of the picture for screens with different pixel densities,
+you can provide <code class="highlighter-rouge">path</code> and <code class="highlighter-rouge">srcset</code> keys instead.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">picture</span><span class="pi">:</span>
+    <span class="na">path</span><span class="pi">:</span>   <span class="s">/assets/img/me.jpg</span>
+    <span class="na">srcset</span><span class="pi">:</span>
+      <span class="na">1x</span><span class="pi">:</span>   <span class="s">/assets/img/me.jpg</span>
+      <span class="na">2x</span><span class="pi">:</span>   <span class="s">/assets/img/me@2x.jpg</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">path</code> key is a fallback image for browsers that don’t support the <code class="highlighter-rouge">srcset</code> attribute.</p>
+
+<p>The keys of the <code class="highlighter-rouge">srcset</code> hash will be used as image descriptors.
+For more information on <code class="highlighter-rouge">srcset</code>, see the
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset">documentation at MDN</a>, or
+<a href="https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/">this article from CSS-Tricks</a>.</p>
+
+<h3 id="adding-social-media-icons">Adding social media icons</h3>
+<p>Hydejack supports a variety of social media icons out of the box.
+These are defined on a per-author basis, so make sure you’ve followed the steps in <a href="#adding-an-author">Adding an author</a>.</p>
+
+<p class="message"><strong>NOTE</strong>: If you are using the gem-based version of Hydejack,
+download <a href="https://github.com/qwtel/hydejack/blob/master/_data/social.yml"><code class="highlighter-rouge">social.yml</code></a>
+and put it into <code class="highlighter-rouge">_data</code> in the root directory.
+This is necessary because gem-based themes do not support including <code class="highlighter-rouge">_data</code>.</p>
+
+<p>You can add a link to a social network by adding an entry to the <code class="highlighter-rouge">social</code> key in to an author.
+It consists of the name of the social network as key and your username within that network as value, e.g.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">social</span><span class="pi">:</span>
+    <span class="na">twitter</span><span class="pi">:</span> <span class="s">qwtel</span>
+    <span class="na">github</span><span class="pi">:</span>  <span class="s">qwtel</span>
+</code></pre></div></div>
+
+<p>Check out <a href="https://github.com/qwtel/hydejack/blob/master/_data/authors.yml"><code class="highlighter-rouge">authors.yml</code></a> to see which networks are available.
+You can also follow the steps <a href="/details/advanced/">here</a> to add your own social media icons.</p>
+
+<p>You can change the order in which the icons appear by moving lines up or down, e.g.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">social</span><span class="pi">:</span>
+    <span class="na">github</span><span class="pi">:</span>  <span class="s">qwtel</span> <span class="c1"># now github appears first</span>
+    <span class="na">twitter</span><span class="pi">:</span> <span class="s">qwtel</span>
+</code></pre></div></div>
+
+<p>To get an overview of which networks are available and how a typical username in that network looks like,
+see the included <a href="https://github.com/qwtel/hydejack/blob/master/_data/authors.yml"><code class="highlighter-rouge">authors.yml</code></a>.</p>
+
+<p>Should providing a username not produce a correct link for some reason, you can provide a complete URL instead, e.g.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">social</span><span class="pi">:</span>
+  <span class="na">youtube</span><span class="pi">:</span> <span class="s">https://www.youtube.com/channel/UCu0PYX_kVANdmgIZ4bw6_kA</span>
+</code></pre></div></div>
+
+<p class="message"><strong>NOTE</strong>: You can add any platform, even if it’s not defined in <a href="https://github.com/qwtel/hydejack/blob/master/_data/social.yml"><code class="highlighter-rouge">social.yml</code></a>,
+by providing a complete URL. However, a fallback icon <span class="icon-link"></span> will be used when no icon is available.
+Supplying your own icons is an <a href="/details/advanced/">advanced topic</a>.</p>
+
+<h3 id="adding-an-email-or-rss-icon">Adding an email or RSS icon</h3>
+<p>If you’d like to add email <span class="icon-mail"></span> or RSS <span class="icon-rss2"></span> to the list, add the <code class="highlighter-rouge">email</code> and <code class="highlighter-rouge">rss</code> keys, e.g.:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">social</span><span class="pi">:</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">mailto:mail@qwtel.com</span>
+  <span class="na">rss</span><span class="pi">:</span>   <span class="s">http://localhost:4000/feed.xml</span> <span class="c1"># make sure you provide an absolute URL</span>
+</code></pre></div></div>
+
+<h2 id="enabling-comments">Enabling comments</h2>
+<p>Hydejack supports comments via <a href="https://disqus.com/">Disqus</a>.
+Before you can add comments to a page you need to register and add your site to Disqus’ admin console.
+Once you have obtained your “Disqus shortname”, you include it in your config file:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">disqus</span><span class="pi">:</span> <span class="s">&lt;Disqus shortname&gt;</span>
+</code></pre></div></div>
+
+<p>Now comments can be enabled by adding <code class="highlighter-rouge">comments: true</code> to the front matter.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span>   <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span>    <span class="s">Hello World</span>
+<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>You can enable comments for entire classes of pages by using
+<a href="https://jekyllrb.com/docs/configuration/#front-matter-defaults">front matter defaults</a>.
+E.g. to enable comments on all posts, add to your config file:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">posts</span>
+    <span class="na">values</span><span class="pi">:</span>
+      <span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<h2 id="enabling-google-analytics">Enabling Google Analytics</h2>
+<p>Enabling Google Analytics is as simple as setting the <code class="highlighter-rouge">google_analytics</code> key.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">google_analytics</span><span class="pi">:</span> <span class="s">UA-XXXXXXXX-X</span>
+</code></pre></div></div>
+
+<p>Conversely, if you want to disable it, you only have to remove the key and no <abbr title="Google Analytics">GA</abbr> code will be part of the generated pages.</p>
+
+<h2 id="changing-built-in-strings">Changing built-in strings</h2>
+<p>You can change the wording of built-in strings like “Related Posts” or “Read more” in <code class="highlighter-rouge">_data/strings.yml</code>.
+If you are using the gem-based version, you can get the default file
+<a href="https://github.com/qwtel/hydejack/blob/master/_data/strings.yml">here</a>.</p>
+
+<p>You will frequently find markers like <code class="highlighter-rouge">&lt;!--post_title--&gt;</code>.
+You can place them freely within your string and they will be replaced with the content they refer to.</p>
+
+<p>You may also use this feature to translate the theme into different languages.
+In this case you should also set the <code class="highlighter-rouge">lang</code> key to your config file, e.g.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s">cc-ll</span>
+</code></pre></div></div>
+
+<p>where <code class="highlighter-rouge">cc</code> is the 2-letter country code and <code class="highlighter-rouge">ll</code> specifies a 2-letter location code, e.g.: <code class="highlighter-rouge">de-at</code>.</p>
+
+<p>You may also change the strings used for formatting dates and times (look out for the <code class="highlighter-rouge">date_formats</code> key),
+but be aware that the values you provide need to be valid
+Ruby <a href="http://ruby-doc.org/core-2.4.1/Time.html#method-i-strftime">format directives</a>.</p>
+
+<p class="read-more">Continue with <a href="/details/basics/" class="heading flip-title">Basics</a></p>
+
+
+</article>
+
+    
+
+
+    <footer role="contentinfo">
+  <hr/>
+  
+  <p><small class="copyright">© 2018. Purva Tendulkar.</small></p>
+  
+  <p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.0.0</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+  </main>
+  <hy-drawer>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+    <div class="sidebar-bg sidebar-overlay" style="background-color:#4fb1ba;background-image:url(assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        <h2 class="h1"><a href="/">Purva Tendulkar</a></h2>
+        
+        
+          <p class="">
+            MS CS Student at Georgia Tech
+
+          </p>
+        
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+  
+  
+  
+    
+      <li>
+        <a
+          id="_navigation"
+          href="/tag/blogs/"
+          class="sidebar-nav-item"
+          
+          >
+          Blog
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/tag/projects/"
+          class="sidebar-nav-item"
+          
+          >
+          Projects
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item"
+          
+          >
+          About Me
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/details/"
+          class="sidebar-nav-item active"
+          
+          >
+          CV
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </nav>
+
+      
+
+      <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+    
+    
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/purvaten" title="GitHub" class="no-mark-external">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/purva-tendulkar-774b48151/" title="LinkedIn" class="no-mark-external">
+    <span class="icon-linkedin2"></span>
+    <span class="sr-only">LinkedIn</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:<purva.tendulkar@gmail.com>" title="Email" class="no-mark-external">
+    <span class="icon-mail"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+</ul>
+
+      </div>
+    </div>
+  </header>
+</hy-drawer>
+
+</hy-push-state>
+
+
+  
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+    loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  </script>
+  
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=7.0.0');</script>
+
+  <!-- <script>
+  function detectCFScript() {
+    var cfScript = Array.prototype.find.call(document.scripts, function(s) {
+      return s !== document.currentScript && s.textContent.indexOf('__cf_email__') > -1;
+    });
+
+    if (cfScript)
+      this.addEventListener('hy-push-state-load', new Function(cfScript.textContent));
+
+    this.removeEventListener('hy-push-state-init', detectCFScript);
+  }
+
+  document
+    .getElementsByTagName('hy-push-state')[0]
+    .addEventListener('hy-push-state-init', detectCFScript);
+</script> -->
+
+
+  <!--<![endif]-->
+
+
+
+  
+<hr class="sr-only"/>
+<h2 class="sr-only">Templates (for web app):</h2>
+
+<template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+<template id="_loading-template">
+  <div class="loading">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+<template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+<template id="_back-template">
+  <a id="_back" class="back nav-btn no-hover">
+    <span class="sr-only">Back</span>
+    <span class="icon-arrow-left2"></span>
+  </a>
+</template>
+
+</body>
+</html>

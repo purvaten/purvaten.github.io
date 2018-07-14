@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v7.0.0 <https://qwtel.com/hydejack/>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Advanced | Purva Tendulkar</title>
+<meta property="og:title" content="Advanced" />
+<meta name="author" content="Purva Tendulkar" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Under the hood, Hydejack is a surprisingly (maybe shockingly) complex beast. Some of the more advanced concepts are explained here." />
+<meta property="og:description" content="Under the hood, Hydejack is a surprisingly (maybe shockingly) complex beast. Some of the more advanced concepts are explained here." />
+<link rel="canonical" href="http://localhost:4000/details/advanced/" />
+<meta property="og:url" content="http://localhost:4000/details/advanced/" />
+<meta property="og:site_name" content="Purva Tendulkar" />
+<script type="application/ld+json">
+{"name":null,"description":"Under the hood, Hydejack is a surprisingly (maybe shockingly) complex beast. Some of the more advanced concepts are explained here.","author":{"@type":"Person","name":"Purva Tendulkar"},"@type":"WebPage","url":"http://localhost:4000/details/advanced/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.png"},"name":"Purva Tendulkar"},"image":null,"headline":"Advanced","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="">
+  
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Purva Tendulkar">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="Purva Tendulkar">
+<meta name="msapplication-config" content="/assets/ieconfig.xml">
+
+
+
+<meta name="generator" content="Hydejack v7.0.0" />
+
+
+<link rel="alternate" type="application/atom+xml" title="Purva Tendulkar Feed" href="http://localhost:4000/feed.xml">
+
+
+<link rel="alternate" href="http://localhost:4000/details/advanced/" hreflang="en">
+
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon.png">
+
+<link rel="manifest" href="/assets/manifest.json">
+
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+
+
+<link id="_katexJS"  rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.js">
+<link id="_katexCSS" rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css">
+
+<script>
+  function stdOnEnd(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function ieOnEnd(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}window.setRelStylesheet=function(n){function e(){this.rel="stylesheet"}var o=document.getElementById(n);o.addEventListener?o.addEventListener("load",e,!1):o.onload=e},window._loaded=!1,window.loadJSDeferred=function(n,e){function o(){window._loaded=!0;var o=document.createElement("script");o.src=n,e&&(("onload"in o?stdOnEnd:ieOnEnd)(o,e),o.onload||stdOnEnd(o,e));var t=document.scripts[0];t.parentNode.insertBefore(o,t)}window._loaded?o():window.addEventListener?window.addEventListener("load",o,!1):window.onload=o};
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+
+  window._noPushState = false;
+  window._noDrawer = false;
+</script>
+
+<!--[if gt IE 8]><!---->
+
+
+<script>
+  WebFontConfig = {
+    
+    google: {
+      families: ['Roboto+Slab:700','Noto+Sans:400,400i,700,700i']
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  };
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = "/assets/bower_components/webfontloader/webfontloader.js";
+    s.parentNode.insertBefore(wf, s);
+  }(document));
+</script>
+<!--<![endif]-->
+
+<noscript>
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i">
+    <style>
+      html { font-family: 'Noto Sans', Helvetica, Arial, sans-serif }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Roboto Slab', Helvetica, Arial, sans-serif }
+    </style>
+  
+
+  <link rel="stylesheet" href="/assets/icomoon/style.css">
+</noscript>
+
+<!--[if gt IE 8]><!---->
+
+
+
+  <link rel="stylesheet" href="/assets/css/hydejack.css?v=7.0.0">
+
+
+
+<style id="_pageStyle">
+
+.content a:not(.btn){color:#4fb1ba;border-color:rgba(79,177,186,0.2)}.content a:not(.btn):hover{border-color:#4fb1ba}:focus{outline-color:#4fb1ba}.btn-primary{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 3px rgba(79,177,186,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#409ba3;border-color:#409ba3}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#409ba3;border-color:#409ba3}::selection{color:#fff;background:#4fb1ba}::-moz-selection{color:#fff;background:#4fb1ba}
+
+</style>
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body>
+  <div class="navbar fixed-top">
+  <div class="content">
+    <div class="nav-btn-bar">
+      <span class="sr-only">Jump to:</span>
+      <a id="_menu" class="nav-btn no-hover" href="#_navigation">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<hy-push-state>
+  <main
+    id="_main"
+    class="content fade-in layout-page"
+    role="main"
+    data-color="#4fb1ba"
+    
+      data-image="assets/img/sidebar-bg.jpg"
+      data-overlay
+    
+    >
+    <article class="page" role="article">
+  <header>
+    <h1 class="page-title">Advanced</h1>
+    
+
+
+
+  
+    <p class="message" >
+      Under the hood, Hydejack is a surprisingly (maybe shockingly) complex beast. Some of the more advanced concepts are explained here.
+
+    </p>
+  
+
+
+  </header>
+
+  <h2 class="no_toc" id="table-of-contents">Table of Contents</h2>
+<ol id="markdown-toc">
+  <li><a href="#adding-a-custom-social-media-icon" id="markdown-toc-adding-a-custom-social-media-icon">Adding a custom social media icon</a>    <ol>
+      <li><a href="#creating-the-icon-font" id="markdown-toc-creating-the-icon-font">Creating the icon font</a></li>
+      <li><a href="#adding-the-platforms-metadata" id="markdown-toc-adding-the-platforms-metadata">Adding the platform’s metadata</a></li>
+    </ol>
+  </li>
+  <li><a href="#building-the-javascript" id="markdown-toc-building-the-javascript">Building the JavaScript</a></li>
+  <li><a href="#how-css-is-organized-in-hydejack" id="markdown-toc-how-css-is-organized-in-hydejack">How CSS is organized in Hydejack</a></li>
+</ol>
+
+<h2 id="adding-a-custom-social-media-icon">Adding a custom social media icon</h2>
+<p>Hydejack includes a number of social media icons by default (in fact, everything that is provided by <a href="https://icomoon.io/">IcoMoon</a>), but since the landscape is always changing, it is likely that a platform that is important to you will be missing at some point.</p>
+
+<p class="message"><strong>NOTE</strong>: You can add any platform by simply providing a complete URL. However, a fallback icon <span class="icon-link"></span> will be used.</p>
+
+<h3 id="creating-the-icon-font">Creating the icon font</h3>
+<p>In order to add a custom social media icon you have to use the <a href="https://icomoon.io/app/">IcoMoon App</a> (free) to create a custom icon webfont. However, it is important that the generated font include all icons already in use by Hydejack. For this purpose, find the <code class="highlighter-rouge">selection.json</code> in <a href="https://github.com/qwtel/hydejack/blob/v6/assets/icomoon/selection.json"><code class="highlighter-rouge">assets/icomoon/selection.json</code></a> and upload it to the app via “Import Icons”.
+Then, use the app to add your icon(s).
+Consult the <a href="https://icomoon.io/#docs">IcoMoon docs</a> for additional help.</p>
+
+<p>Once you’ve created and downloaded the icon font form IconMoon, replace the <code class="highlighter-rouge">icomoon</code> folder in <code class="highlighter-rouge">assets</code> in its entirety. Keep in mind that future updates of Hydejack will override this folder.</p>
+
+<h3 id="adding-the-platforms-metadata">Adding the platform’s metadata</h3>
+<p>For the second step it is necessary to add the network’s metadata to <code class="highlighter-rouge">_data/social.yml</code>.
+An entry looks like:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">deviantart</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">DeviantArt</span>
+  <span class="na">icon</span><span class="pi">:</span> <span class="s">icon-deviantart</span>
+  <span class="na">prepend</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://"</span>
+  <span class="na">append</span><span class="pi">:</span> <span class="s2">"</span><span class="s">.deviantart.com"</span>
+</code></pre></div></div>
+
+<dl>
+  <dt><code class="highlighter-rouge">name</code></dt>
+  <dd>The name of the network. Used for for the title attribute and screen readers.</dd>
+  <dt><code class="highlighter-rouge">icon</code></dt>
+  <dd>The icon CSS class. Can be chosen during the IcoMoon creation process.</dd>
+  <dt><code class="highlighter-rouge">prepend</code></dt>
+  <dd>Optional. A string that is prepended to the username to form the link to the profile. If the final URL should be <code class="highlighter-rouge">https://&lt;username&gt;.deviantart.com</code>, this would be <code class="highlighter-rouge">https://</code></dd>
+  <dt><code class="highlighter-rouge">append</code></dt>
+  <dd>Optional. A string that is appended to the username to form the link to the profile. If the final URL should be <code class="highlighter-rouge">https://&lt;username&gt;.deviantart.com</code>, this would be <code class="highlighter-rouge">.deviantart.com</code>.</dd>
+</dl>
+
+<h2 id="building-the-javascript">Building the JavaScript</h2>
+<p>In order to build the JavaScript you need to have <a href="https://nodejs.org/en/">node.js</a> installed. Specifically, the <code class="highlighter-rouge">npm</code> command needs to be available, which is part of node.js.</p>
+
+<p class="message"><strong>NOTE</strong>: Building the JavaScript is optional! Hydejack comes with a pre-built, minified <code class="highlighter-rouge">hydejack.js</code> file
+that you can find in part of the theme’s <code class="highlighter-rouge">assets</code>.</p>
+
+<p>Before you start, make sure you’ve copied the following files:</p>
+<ul>
+  <li><code class="highlighter-rouge">_js/</code></li>
+  <li><code class="highlighter-rouge">package.json</code></li>
+  <li><code class="highlighter-rouge">package-lock.json</code></li>
+  <li><code class="highlighter-rouge">.babelrc</code></li>
+  <li><code class="highlighter-rouge">.eslintignore</code></li>
+  <li><code class="highlighter-rouge">.eslintrc</code></li>
+</ul>
+
+<p>When building for the first time (and after each update of Hydejack) you have to run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm install
+</code></pre></div></div>
+
+<p>to fetch all dependencies (and put them in a local folder <code class="highlighter-rouge">node_modules</code>), lint the code and write the bundled and minified script into <code class="highlighter-rouge">assets/js/hydejack.js</code>.</p>
+
+<p>You can re-build it with</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run build:js
+</code></pre></div></div>
+
+<p>If you want to actively develop the scripts, it is better to run</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run watch:js
+</code></pre></div></div>
+
+<p>which will build a non-minified version of <code class="highlighter-rouge">assets/js/hydejack.js</code> after each filechange.</p>
+
+<h2 id="how-css-is-organized-in-hydejack">How CSS is organized in Hydejack</h2>
+<p>Hydejack takes a quite unique approach to CSS, which is motivated by the ability to
+inline essential CSS rules in a <code class="highlighter-rouge">style</code> tag in the <code class="highlighter-rouge">&lt;head/&gt;</code> of a page (to increase the loading speed),
+while serving the rest in a separate file.</p>
+
+<p>The styles are written in SCSS and are located in the <code class="highlighter-rouge">_sass</code> folder, which looks like</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── hydejack
+│   ├── __inline
+│   ├── __link
+│   ├── _base.pre.scss
+│   ├── ...
+│   └── _social.pre.scss
+├── pooleparty
+│   ├── __inline
+│   ├── __link
+│   ├── _base.pre.scss
+│   ├── ...
+│   └── _type.pre.scss
+├── mixins.scss
+├── my-inline.scss
+├── my-style.scss
+├── syntax.scss
+└── variables.scss
+</code></pre></div></div>
+
+<p>The style rules are organized alongside components (or rather, topics) like “sidebar” and “footer”.
+Further, there are two separate frameworks, “pooleparty” and “hydejack”,
+which grew out of the original <a href="http://getpoole.com/">Poole</a> and <a href="http://hyde.getpoole.com/">Hyde</a> projects.
+Poole/party contains more general style rules, while Hyde/jack contains those that more are specific to the theme.
+However, this separation has become more blurry over time.</p>
+
+<p>Inside those folders, you will notice the <code class="highlighter-rouge">__inline</code> and <code class="highlighter-rouge">__link</code> folders.
+The unfriendly names are intentional, because their contents are generated by a script and shouldn’t be modified directly.
+The source files are located in the same folder and end with <code class="highlighter-rouge">.pre.scss</code>.
+They are fully valid SCSS files, but contain comments that mark which lines should be inlined and which should be fetched asynchronously.</p>
+
+<p>The rules are as follows:</p>
+<ul>
+  <li>Every line between <code class="highlighter-rouge">// &lt;&lt;&lt; inline </code> and <code class="highlighter-rouge">// &gt;&gt;&gt;</code> will be inlined</li>
+  <li>Every line between <code class="highlighter-rouge">// &lt;&lt;&lt; link </code> and <code class="highlighter-rouge">// &gt;&gt;&gt;</code> will be linked</li>
+  <li>Every line that isn’t contained in a block and ends with <code class="highlighter-rouge">// inline</code> will be inlined</li>
+  <li>Every line that isn’t contained in a block and ends with <code class="highlighter-rouge">// link</code> will be linked</li>
+  <li>Every line for which none of the above applies will be included in both.</li>
+</ul>
+
+<p>The actual splitting happen with the <code class="highlighter-rouge">_scripts/build-css.sh</code> script (requires node.js 8+).
+You can run the script once by using</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run build:css
+</code></pre></div></div>
+
+<p>or rebuild the CSS on every file change</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run watch:css
+</code></pre></div></div>
+
+<p>Note that <code class="highlighter-rouge">my-inline.scss</code> and <code class="highlighter-rouge">my-style.scss</code> are not affected by this.
+Also, since all files are valid SCSS, the splitting part is entirely optional.
+If you would like to build just one regular CSS file, add</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hydejack</span><span class="pi">:</span>
+  <span class="na">no_inline_css</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>to your config file.</p>
+
+
+</article>
+
+    
+
+
+    <footer role="contentinfo">
+  <hr/>
+  
+  <p><small class="copyright">© 2018. Purva Tendulkar.</small></p>
+  
+  <p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.0.0</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+  </main>
+  <hy-drawer>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+    <div class="sidebar-bg sidebar-overlay" style="background-color:#4fb1ba;background-image:url(assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        <h2 class="h1"><a href="/">Purva Tendulkar</a></h2>
+        
+        
+          <p class="">
+            MS CS Student at Georgia Tech
+
+          </p>
+        
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+  
+  
+  
+    
+      <li>
+        <a
+          id="_navigation"
+          href="/tag/blogs/"
+          class="sidebar-nav-item"
+          
+          >
+          Blog
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/tag/projects/"
+          class="sidebar-nav-item"
+          
+          >
+          Projects
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item"
+          
+          >
+          About Me
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/details/"
+          class="sidebar-nav-item active"
+          
+          >
+          CV
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </nav>
+
+      
+
+      <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+    
+    
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/purvaten" title="GitHub" class="no-mark-external">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/purva-tendulkar-774b48151/" title="LinkedIn" class="no-mark-external">
+    <span class="icon-linkedin2"></span>
+    <span class="sr-only">LinkedIn</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:<purva.tendulkar@gmail.com>" title="Email" class="no-mark-external">
+    <span class="icon-mail"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+</ul>
+
+      </div>
+    </div>
+  </header>
+</hy-drawer>
+
+</hy-push-state>
+
+
+  
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+    loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  </script>
+  
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=7.0.0');</script>
+
+  <!-- <script>
+  function detectCFScript() {
+    var cfScript = Array.prototype.find.call(document.scripts, function(s) {
+      return s !== document.currentScript && s.textContent.indexOf('__cf_email__') > -1;
+    });
+
+    if (cfScript)
+      this.addEventListener('hy-push-state-load', new Function(cfScript.textContent));
+
+    this.removeEventListener('hy-push-state-init', detectCFScript);
+  }
+
+  document
+    .getElementsByTagName('hy-push-state')[0]
+    .addEventListener('hy-push-state-init', detectCFScript);
+</script> -->
+
+
+  <!--<![endif]-->
+
+
+
+  
+<hr class="sr-only"/>
+<h2 class="sr-only">Templates (for web app):</h2>
+
+<template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+<template id="_loading-template">
+  <div class="loading">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+<template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+<template id="_back-template">
+  <a id="_back" class="back nav-btn no-hover">
+    <span class="sr-only">Back</span>
+    <span class="icon-arrow-left2"></span>
+  </a>
+</template>
+
+</body>
+</html>
