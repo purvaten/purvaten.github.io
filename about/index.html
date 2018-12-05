@@ -275,13 +275,26 @@ The <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep
 <!-- Introduction -->
 <h2>Introduction / Background / Motivation</h2>
 <h4>What did you try to do? What problem did you try to solve? Articulate your objectives using absolutely no jargon.</h4>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+The problem relates to creating a word doodle. A word doodle is basically stylizing a word by modifying its individual letters or groups of letters using cliparts, that is, the individual character(s) are embedded into the clipart such that the resulting (character + image) combination can be discerned as either or both. This can be considered as an artistic way of describing a word, which may convey deeper shades of meaning to the word based on the cliparts used to describe it. An example is shown in the figure below where the input word is "Always" and the theme is "Harry Potter". The specific objectives of the problem can be defined in the following steps-
+<ul>
+<li>Identify and extract a dataset for theme-based cliparts</li>
+<li>Create a model to identify the best theme-related clipart which most closely resmebles a letter of the input word</li>
+<li>Generate new theme-related cliparts which are more identifiable as letters of the input word</li>
+</ul>
+<div style="text-align: center;">
+<img style="height: 300px;" alt="" src="../assets/img/io.png" />
+</div>
 
 <h4>How is it done today, and what are the limits of current practice?</h4>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p>This is a unique, creative AI task which has not been explored before. There has been independent work on finding matching regions in images, as well as generating new images.</p>
+
+<p>For find closest matching images (content-wise similarity), there exist algorithms like Chamfer Matching or Pattern Matching in OpenCV. However, these do not fit well for our application. Chamfer matching looks for exact matches and is not well supported today, while pattern matching is not scale and tilt invariant and checks pixel-wise similarity through a sliding window. For this application, we are more interested in identifying the common visual features between 2 images (clipart and font), and possibly learning a representation for this to compare different features. We thus use an autoencoder-based approach for this task for the first time.</p>
+
+<p>With respect to image generation, work includes style transfer, pix2pix and recent work on transferring font styles like Glyphnet. We explore each of these techniques for our application.</p>
 
 <h4>Who cares? If you are successful, what difference will it make?</h4>
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This problem is particularly exciting for applications such as advertising, marketting (for generating catchy slogans) and product design. Coming up with visually creative ways to express a message is challenging and non-trivial, as there may be several different interpretations of art, and ways to represent such content. There also does not exist any general evaluation criteria or metric to assess the quality of generated art.
+In today's day and age, where AI is advancing rapidly, researchers are struggling to make AI more human-like in its interactions and artistic abilities. This project takes one step towards reaching this goal.
 
 <br /><br />
 <!-- Approach -->
@@ -308,7 +321,7 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 
   <hr />
   <footer>
-  <p>© You Name(s) Here</p>
+  <p>© Purva Tendulkar</p>
   </footer>
 </div>
 </div>
