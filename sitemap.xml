@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/tag/blogs/</loc>
-<lastmod>2018-07-27T11:17:42+05:30</lastmod>
+<lastmod>2018-12-04T21:58:32-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tag/projects/</loc>
-<lastmod>2018-07-27T11:17:42+05:30</lastmod>
+<lastmod>2018-12-04T21:58:32-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2018/06/08/ms-apply/</loc>
-<lastmod>2018-06-08T00:00:00+05:30</lastmod>
+<lastmod>2018-06-08T00:00:00-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/licenses/Apache-2.0/</loc>
@@ -71,14 +71,14 @@
 </url>
 <url>
 <loc>http://localhost:4000/documents/btp.pdf</loc>
-<lastmod>2018-05-05T04:19:35+05:30</lastmod>
+<lastmod>2018-05-05T00:19:34-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/documents/cv.pdf</loc>
-<lastmod>2018-07-27T11:16:42+05:30</lastmod>
+<lastmod>2018-07-27T07:16:42-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/documents/report.pdf</loc>
-<lastmod>2017-08-04T08:06:16+05:30</lastmod>
+<lastmod>2017-08-04T04:06:16-04:00</lastmod>
 </url>
 </urlset>
