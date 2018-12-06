@@ -300,24 +300,68 @@ In today's day and age, where AI is advancing rapidly, researchers are strugglin
 <!-- Approach -->
 <h2>Approach</h2>
 <h4>What did you do exactly? How did you solve the problem? Why did you think it would be successful? Is anything new in your approach?</h4>
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<p>My contributions were as follows-
+<ul>
+<li>Developing an AlexNet based autoencoder approach for finding best matches.</li>
+<li>Ideas on extending the model using pix2pix or glyphnet.</li>
+</ul>
+</p>
+
+<p>I expected that autoencoder-based approach would be able to learn primary features that make an alphabet distinguishable, as also identifying similar key features in cluparts (obtained from the Noun Project). We thus expected this to be sucessful in learning a good representation of both, the cliparts and alphabets. We then used the lower dimensional learnt representations for computing the similarities between letters and cliparts using cosine distance.</p>
+
+<p>For generative models, we were simply interested in visualizing the results to assess the capabilities of current state-of-the-art generative models.</p>
 
 <h4>What problems did you anticipate? What problems did you encounter? Did the very first thing you tried work?</h4>
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+<p>We had anticipated that there would be problems with data collection and model evaluation, which we did in fact encounter. The data collection for cliparts from Noun Project was pretty straightforward since it simply involved writing some basic code to scrape the website. However for collecting alphabrts of various fonts, we had to search for several unique font files and manually sift through the data to make sure the letters would be discerned well.</p>
+
+<p>In terms of model evaluation, we planned to use some standard techniques like Chamfer matching and contour matching as a baseline, but had to struggle a lot to find a well-documented code base. These older techniques seem to have become obsolete, and this search took up a lot of time. This was one of the first few things we tried which did not work. However, moving on to use on autoencoder worked well for us and even a basic autoencoder (2 layer autoencoder designed for MNIST data) worked really well at clustering several different fonts of letters. Even so, since the task is completely unique, we had no intuition regarding which autoencoder setup to use or how deep it will be required to be to learn a representation for this particular class of icons and fonts. It is still a challenge and we intend to evaluate results on several different architectures.</p>
+
+<p>This project is still ongoing and there are engineering challenges for designing a good generative model for generating new images which can be discerned as both clipart and alphabet.</p>
 
 <br /><br />
 <!-- Results -->
 <h2>Experiments and Results</h2>
 <h4>How did you measure success? What experiments were used? What were the results, both quantitative and qualitative? Did you succeed? Did you fail? Why?</h4>
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+We evaluated our autoencoder by visualizing clusters (trained on alphabet data only). We evaluated our final autoencoder trained on both alphabet and cliart data through qualitative results. We were successful in being able to select the best icons in the theme set. Some results are shown below. While autoencoder based results are decent, just looking at the cliparts is not enough to detect the underlying alphabet. We are currently working on using the clipart-alphabet pairs for pix2pix. We are also looking into GlyphNet wherein conditional GANs are trained specifically for learning font styles. Our work on generation is still ongoing and we plan to use crowd-sourcing for evaluation.
 
 <br /><br />
 
 <!-- Main Results Figure -->
-<div style="text-align: center;">
-<img style="height: 300px;" alt="" src="../assets/img/results.png" />
-</div>
-<br /><br />
+<table style="width:100%">
+  <tr>
+    <th>Results</th>
+    <th>Matched Alphabets</th>
+    <th>Word</th>
+    <th>Theme</th>
+  </tr>
+  <tr>
+    <td><img style="height: 150px; width: 1000px;" alt="" src="../assets/img/always_harry_potter.png" /></td>
+    <td><img style="height: 120px; width: 850px;" alt="" src="../assets/img/always_text.png" /></td>
+    <td>Always</td>
+    <td>Harry Potter</td>
+  </tr>
+  <tr>
+    <td><img style="height: 150px; width: 1000px;" alt="" src="../assets/img/earth_environment.png" /></td>
+    <td><img style="height: 120px; width: 850px;" alt="" src="../assets/img/earth_text.png" /></td>
+    <td>Earth</td>
+    <td>Environment</td>
+  </tr>
+  <tr>
+    <td><img style="height: 150px; width: 1000px;" alt="" src="../assets/img/fail_education.png" /></td>
+    <td><img style="height: 120px; width: 850px;" alt="" src="../assets/img/fail_text.png" /></td>
+    <td>FAIL</td>
+    <td>Education</td>
+  </tr>
+  <tr>
+    <td><img style="height: 150px; width: 1000px;" alt="" src="../assets/img/taj_indian.png" /></td>
+    <td><img style="height: 120px; width: 850px;" alt="" src="../assets/img/taj_text.png" /></td>
+    <td>TAJ</td>
+    <td>Indian</td>
+  </tr>
+</table>
+
+<p>The model is being trained on ~40,000 Noun Project cliparts (randomly scraped from the website) and ~40,000 alphabets in ~770 different fonts (uppercase and lowercase). At test time, theme-based cliparts scraped from Noun Project and 10 specific fonts of alphabets are fed into the trained autoencoder to obtain a shared learned representation, on which cosine distance is applied to find the best matches.</p>
+<p><b>NOTE :</b> This is why the matched alphabets are not all of the same font as the font with least distance has been selected for each letter.</p>
 
   <hr />
   <footer>
