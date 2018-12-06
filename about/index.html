@@ -277,7 +277,7 @@ color: #FF9900;
 <!-- Goal -->
 <h2>Abstract</h2>
 
-Recently, there has been a lot of work in using generative models for drawing images. This has many applications, from assisting the creative process of an artist to aiding designers in product design and even advertising. On these lines, word doodling or creative lettering seems like an interesting next step, given its numerous applications in fields like advertising, marketing and logo design. In this project we propose a model to automatically generate a word doodle for any input word, given a theme. Our dataset consists of theme-based cliparts obtained from the Noun Project. We use an auto-encoder based approach for learning a joint representation of cliparts and letter fonts, and propose a pix2pix approach for generating theme-related objects which resemble natural fonts. Our work shows promising results, and attempts to encourage the community towards using generative models for creative AI tasks.
+Recently, there has been a lot of work in using generative models for drawing images. This has many applications, from assisting the creative process of an artist to aiding designers in product design and even advertising. On these lines, word doodling or creative lettering seems like an interesting next step, given its numerous applications in fields like advertising, marketing and logo design. In this project we propose a model to automatically generate a word doodle for any input word, given a theme. Our dataset consists of theme-based cliparts obtained from the <a href="https://thenounproject.com/">Noun Project</a>. We use an auto-encoder based approach for learning a joint representation of cliparts and letter fonts, and propose a <a href="https://arxiv.org/abs/1611.07004">pix2pix</a> approach for generating theme-related objects which resemble natural fonts. Our work shows promising results, and attempts to encourage the community towards using generative models for creative AI tasks.
 <br /><br />
 <!-- figure -->
 <h2>AlexNet-based autoencoder setup</h2>
@@ -306,12 +306,12 @@ The problem relates to creating a word doodle. A word doodle is basically styliz
 <h4>How is it done today, and what are the limits of current practice?</h4>
 <p>This is a unique, creative AI task which has not been explored before. There has been independent work on finding matching regions in images, as well as generating new images.</p>
 
-<p>For find closest matching images (content-wise similarity), there exist algorithms like Chamfer Matching or Pattern Matching in OpenCV. However, these do not fit well for our application. Chamfer matching looks for exact matches and is not well supported today, while pattern matching is not scale and tilt invariant and checks pixel-wise similarity through a sliding window. For this application, we are more interested in identifying the common visual features between 2 images (clipart and font), and possibly learning a representation for this to compare different features. We thus use an autoencoder-based approach for this task for the first time.</p>
+<p>For find closest matching images (content-wise similarity), there exist algorithms like <a href="https://www.ijcai.org/Proceedings/77-2/Papers/024.pdf">Chamfer Matching</a> or Pattern Matching in OpenCV. However, these do not fit well for our application. Chamfer matching looks for exact matches and is not well supported today, while pattern matching is not scale and tilt invariant and checks pixel-wise similarity through a sliding window. For this application, we are more interested in identifying the common visual features between 2 images (clipart and font), and possibly learning a representation for this to compare different features. We thus use an autoencoder-based approach for this task for the first time.</p>
 
-<p>With respect to image generation, work includes style transfer, pix2pix and recent work on transferring font styles like Glyphnet. We explore each of these techniques for our application.</p>
+<p>With respect to image generation, work includes style transfer, pix2pix and recent work on transferring font styles like <a href="https://arxiv.org/abs/1712.00516">Glyphnet</a>. We explore each of these techniques for our application.</p>
 
 <h4>Who cares? If you are successful, what difference will it make?</h4>
-This problem is particularly exciting for applications such as advertising, marketting (for generating catchy slogans) and product design. Coming up with visually creative ways to express a message is challenging and non-trivial, as there may be several different interpretations of art, and ways to represent such content. There also does not exist any general evaluation criteria or metric to assess the quality of generated art.
+This problem is particularly exciting for applications such as advertising, marketing (for generating catchy slogans) and product design. Coming up with visually creative ways to express a message is challenging and non-trivial, as there may be several different interpretations of art, and ways to represent such content. There also does not exist any general evaluation criteria or metric to assess the quality of generated art.
 In today's day and age, where AI is advancing rapidly, researchers are struggling to make AI more human-like in its interactions and artistic abilities. This project takes one step towards reaching this goal.
 
 <br /><br />
@@ -321,16 +321,16 @@ In today's day and age, where AI is advancing rapidly, researchers are strugglin
 <p>My contributions were as follows-
 <ul>
 <li>Developing an AlexNet based autoencoder approach for finding best matches.</li>
-<li>Ideas on extending the model using pix2pix or glyphnet.</li>
+<li>Ideas on extending the model using pix2pix or Glyphnet.</li>
 </ul>
 </p>
 
-<p>I expected that autoencoder-based approach would be able to learn primary features that make an alphabet distinguishable, as also identifying similar key features in cluparts (obtained from the Noun Project). We thus expected this to be sucessful in learning a good representation of both, the cliparts and alphabets. We then used the lower dimensional learnt representations for computing the similarities between letters and cliparts using cosine distance.</p>
+<p>I expected that autoencoder-based approach would be able to learn primary features that make an alphabet distinguishable, as also identifying similar key features in cliparts (obtained from the Noun Project). We thus expected this to be sucessful in learning a good representation of both, the cliparts and alphabets. We then used the lower dimensional learnt representations for computing the similarities between letters and cliparts using cosine distance.</p>
 
 <p>For generative models, we were simply interested in visualizing the results to assess the capabilities of current state-of-the-art generative models.</p>
 
 <h4>What problems did you anticipate? What problems did you encounter? Did the very first thing you tried work?</h4>
-<p>We had anticipated that there would be problems with data collection and model evaluation, which we did in fact encounter. The data collection for cliparts from Noun Project was pretty straightforward since it simply involved writing some basic code to scrape the website. However for collecting alphabrts of various fonts, we had to search for several unique font files and manually sift through the data to make sure the letters would be discerned well.</p>
+<p>We had anticipated that there would be problems with data collection and model evaluation, which we did in fact encounter. The data collection for cliparts from Noun Project was pretty straightforward since it simply involved writing some basic <a href="https://github.com/purvaten/doodling">code</a> to scrape the website. However for collecting alphabrts of various fonts, we had to search for several unique font files and manually sift through the data to make sure the letters would be discerned well.</p>
 
 <p>In terms of model evaluation, we planned to use some standard techniques like Chamfer matching and contour matching as a baseline, but had to struggle a lot to find a well-documented code base. These older techniques seem to have become obsolete, and this search took up a lot of time. This was one of the first few things we tried which did not work. However, moving on to use on autoencoder worked well for us and even a basic autoencoder (2 layer autoencoder designed for MNIST data) worked really well at clustering several different fonts of letters. Even so, since the task is completely unique, we had no intuition regarding which autoencoder setup to use or how deep it will be required to be to learn a representation for this particular class of icons and fonts. It is still a challenge and we intend to evaluate results on several different architectures.</p>
 
