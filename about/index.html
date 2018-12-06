@@ -240,6 +240,24 @@ color: #3366CC;
 .data {
 color: #FF9900;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 </style>
 
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
@@ -326,6 +344,24 @@ We evaluated our autoencoder by visualizing clusters (trained on alphabet data o
 
 <br /><br />
 
+<!-- Clustering scatterplots -->
+<div class="row">
+  <div class="column">
+    <img src="../assets/img/scatter.png" alt="" style="width:100%" />
+  </div>
+  <div class="column">
+    <img src="../assets/img/la_lb_ua_ub.png" alt="" style="width:100%" />
+  </div>
+  <div class="column">
+    <img src="../assets/img/uo_uq_ue_uf.png" alt="" style="width:100%" />
+  </div>
+</div>
+</div>
+
+<p> The intermediate representations are reduced in dimensionality using TSNE and then clusters are plotted based on the alphabet labels for font images. The results are in accordance with what is expected. For example, in the third plot we expect uppercase O and uppercase Q to be similar looking and hence be in nearby clusters. Similarly we expect uppercase E and uppercase F to be close. Visually, we can see clear differences between O and Q vs E and F, and hence expect the distance between these 2 sets of clusters to be large. This is evident from the clusters.</p>
+
+<br /><br />
+
 <!-- Main Results Figure -->
 <table style="width:100%">
   <tr>
@@ -360,14 +396,12 @@ We evaluated our autoencoder by visualizing clusters (trained on alphabet data o
   </tr>
 </table>
 
-<p>The model is being trained on ~40,000 Noun Project cliparts (randomly scraped from the website) and ~40,000 alphabets in ~770 different fonts (uppercase and lowercase). At test time, theme-based cliparts scraped from Noun Project and 10 specific fonts of alphabets are fed into the trained autoencoder to obtain a shared learned representation, on which cosine distance is applied to find the best matches.</p>
-<p><b>NOTE :</b> This is why the matched alphabets are not all of the same font as the font with least distance has been selected for each letter.</p>
+<p><b>NOTE :</b>The model is being trained on ~40,000 Noun Project cliparts (randomly scraped from the website) and ~40,000 alphabets in ~770 different fonts (uppercase and lowercase). At test time, theme-based cliparts scraped from Noun Project and 10 specific fonts of alphabets are fed into the trained autoencoder to obtain a shared learned representation, on which cosine distance is applied to find the best matches. This is why the matched alphabets are not all of the same font as the font with least distance has been selected for each letter.</p>
 
   <hr />
   <footer>
   <p>© Purva Tendulkar</p>
   </footer>
-</div>
 </div>
 
 <br /><br />
