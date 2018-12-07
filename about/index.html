@@ -327,6 +327,16 @@ In today's day and age, where AI is advancing rapidly, researchers are strugglin
 
 <p>I expected that autoencoder-based approach would be able to learn primary features that make an alphabet distinguishable, as also identifying similar key features in cliparts (obtained from the Noun Project). We thus expected this to be sucessful in learning a good representation of both, the cliparts and alphabets. We then used the lower dimensional learnt representations for computing the similarities between letters and cliparts using cosine distance.</p>
 
+<p> The steps are as follows-
+<ol>
+<li>Obtained alphabet data in ~770 different fonts for uppercase and lowercase alphabets giving around ~40k alphabet images.</li>
+<li>Randomly scraped ~40k Noun Project icons from the website (there are a lot more, but we thought it would be better to have an equal number of alphabet and clipart images).</li>
+<li>This data was scaled to 224x224 to fit an AlexNet-based autoencoder. This was trained on all these 80k images.</li>
+<li>Intermediate representations were compared using cosine distance and best matches were selected.</li>
+<li>At test time, only a limited number (10) of fonts were fed into the autoencoder and matched with the repesentations of each of the theme-related cliparts. The top match for each letter (least cosine distance) as selected as the final clipart for that letter. Note that because of this, the results can show different fonts selected for each letter of the input word.</li>
+</ol>
+</p>
+
 <p>For generative models, we were simply interested in visualizing the results to assess the capabilities of current state-of-the-art generative models.</p>
 
 <h4>What problems did you anticipate? What problems did you encounter? Did the very first thing you tried work?</h4>
@@ -395,8 +405,6 @@ We evaluated our autoencoder by visualizing clusters (trained on alphabet data o
     <td>Indian</td>
   </tr>
 </table>
-
-<p><b>NOTE :</b>The model is being trained on ~40,000 Noun Project cliparts (randomly scraped from the website) and ~40,000 alphabets in ~770 different fonts (uppercase and lowercase). At test time, theme-based cliparts scraped from Noun Project and 10 specific fonts of alphabets are fed into the trained autoencoder to obtain a shared learned representation, on which cosine distance is applied to find the best matches. This is why the matched alphabets are not all of the same font as the font with least distance has been selected for each letter.</p>
 
   <hr />
   <footer>
