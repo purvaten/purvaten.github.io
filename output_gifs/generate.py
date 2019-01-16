@@ -1,6 +1,8 @@
 import numpy as np
 import pickle
 
+with open('hp.pickle', 'rb') as f:
+    data = pickle.load(f)
 
 output = "<html><body><center><table border=1>"
 
