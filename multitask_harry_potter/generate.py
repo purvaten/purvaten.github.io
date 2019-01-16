@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 
-with open('multitask_hp', 'rb') as f:
+with open('multitask_hp.pickle', 'rb') as f:
     data = pickle.load(f)
 
 
