@@ -17,11 +17,13 @@ title: Purva Tendulkar
 email: purva@gatech.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Purva is a Computer Science MS student at Georgia Tech, advised by Dr. Devi Parikh.
-  Her research interests focus on making AI capable of understanding human perception of creativity and generating creative works of art.
+  Her research interests focus on exploring the creation of AI that can better understand human preferences through the use of common sense reasoning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://purvaten.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PurvaTendulkar
 github_username:  purvaten
+linkedin_username: purva-tendulkar-774b48151
+include: ['_pages']
 
 # Build settings
 markdown: kramdown
