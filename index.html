@@ -1,227 +1,165 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Purva Tendulkar</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900' rel='stylesheet' type='text/css'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css" />
-
-  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <meta content="Purva Tendulkar" property="og:title">
-  <meta content="website" property="og:type">
-  <meta content="https://purvaten.github.io/static/img/purva.jpg" property="og:image">
-  <meta content="https://purvaten.github.io" property="og:url">
-  <meta content="Purva is a Computer Science MS student at Georgia Tech, advised by Dr. Devi Parikh. She is interested in the broad areas of Computer Vision, Machine Learning, and Natural Language Processing. Her research interests focus on exploring the creation of AI that can better understand human preferences through the use of common sense reasoning." property="og:description">
-  <meta property="fb:app_id" content="379874455896076" />
-
-
-</head>
-<style type="text/css">
-.blinking-cursor {
-  font-weight: 200;
-  font-size: 20px;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-body{
-  background: white;
-  color: black;
-  font-weight: 400;
-  font-family: 'Avenir', sans-serif;
-  padding-top: 70px;
-}
-
-.title_bar_text{
-  margin-left: 15px;
-  color: white;
-}
-
-h1,h2,h3, h4{
-  font-weight: 300;
-}
-.content_heading{
-  margin-left: 5px;
-}
-.content{
-  margin-left: 30px;
-  font-size: 16px;
-}
-.section_heading{
-  padding-top: 40px;
-}
-img{
-  vertical-align: middle !important;
-}
-
-p{
-  font-size: 16px;
-}
-#news_list li, #achievements_list li{
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.contact_div{
-  margin-bottom: 30px;
-}
-
-.project_list{
-  margin-bottom: 20px;
-}
-.panel{
-  margin-bottom: 0px;
-}
-.navbar-right li{
-  color: white;
-}
-.thumb {
-    margin: 20px 0;
-    border: 1px solid #808080;
-}
-.conf{
-  color: blue;
-  font-weight: 500;
-}
-.white-text{
-  color: white;
-}
-
-a:not(.navbar-brand):not(.btn-social-icon):not(.github-button):not(.link-btn){
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
-  color: inherit;
-}
-
-a:hover:not(.btn-social-icon):not(.github-button):not(.link-btn) {
-  color:#ffcc00 !important;
-  /*border-bottom: none;*/
-}
-
-</style>
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand active" href="/">Purva Tendulkar</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a target="_blank" href="https://github.com/purvaten">Github</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <!--<li><a href="#publications">Publications</a></li>-->
-          <li><a href="#education">Education</a></li>
-          <!--<li><a href="#achievements">Achievements</a></li>-->
-          <li><a href="/static/docs/purva_resume.pdf" target="_blank">CV</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div id="about"></div>
-    <div id="news"></div>
-    <!--<div id="achievements"></div>-->
-    <!--<div id="publications"></div>-->
-    <div id="projects"></div>
-    <div id="experience"></div>
-    <div id="education"></div>
-    <!-- <div id="skills"></div> -->
-    <div id="contact"></div>
-  </div>
-
-  <div class="panel">
-    <div class="panel-footer" align="center">This <a href="http://deshraj.xyz/">guy</a> makes a nice webpage.</div>
-  </div>
-
-  <script type="text/javascript">
-    $( document ).ready(function() {
-      $("#about").load("templates/about.html");
-      $("#news").load("templates/news.html");
-      $("#experience").load("templates/experience.html");
-      $("#publications").load("templates/publications.html");
-      $("#projects").load("templates/projects.html");
-      $("#skills").load("templates/skills.html");
-      $("#education").load("templates/education.html");
-      // $("#achievements").load("templates/achievements.html");
-      $("#contact").load("templates/contact.html");
-    });
-  </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122476619-1"></script>
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- DELETE THIS SCRIPT if you use this HTML, otherwise my analytics will track your page -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-122476619-1');
-  </script>
+    gtag('config', 'UA-7580334-2');
+  </script-->
 
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>Purva Tendulkar</title>
 
+  <meta name="author" content="Purva Tendulkar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Purva Tendulkar</name>
+              </p>
+              <p> I am a second year computer science MS
+              student at Georgia Tech, advised by <a href="https://filebox.ece.vt.edu/~parikh/">Prof. Devi Parikh</a>. I earned my Bachelors in Computer Engineering in 2018 from College of Engineering Pune, India.
+              </p>
+
+              <p class="content">In the past couple of years, I have had the fortune to intern / conduct research at <a href="http://aibee.com/en/">AiBee Corp., Palo Alto</a> (Summer 2019) mentored by <a href="https://scholar.google.com/citations?user=Te3H6mMAAAAJ&hl=en">Chunhui Gu</a> and <a href="http://www.niebles.net/">Juan Carlos Niebles</a> and; <a href="http://robotics.iiit.ac.in/">Cyber-Physical Systems Research Group, NTU Singapore</a> (Summer 2017) mentored by <a href="https://www.ntu.edu.sg/home/arvinde/">Dr. Arvind Easwaran</a> and <a href="http://research.ntu.edu.sg/expertise/academicprofile/Pages/StaffProfile.aspx?ST_EMAILID=ANUPAM&">Anupam Chattopadhyay</a>, on a diverse set of topics - ranging from vision & language to cyber security.</p>
+
+              <p class="content">In my free time, play the Harmonium instrument. I am very passionate about music. I love to learn about different music styles and their histories. I am also a trained Bharatnatyam dancer.</p>
+
+              <p style="text-align:center">
+                <a href="mailto:purva@gatech.edu">Email</a> &nbsp/&nbsp
+                <a href="data/purva_resume.pdf">CV</a> &nbsp/&nbsp
+                <!--a href="https://scholar.google.com/citations?user=rIK7AMkAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp-->
+                <a href="https://www.linkedin.com/in/purva-tendulkar-774b48151/"> LinkedIn </a> &nbsp/&nbsp
+                <a href="https://github.com/purvaten"> Github </a> &nbsp/&nbsp
+                <a href="https://twitter.com/PurvaTendulkar"> Twitter </a> &nbsp/&nbsp
+                <a href="https://www.instagram.com/purva.tendulkar/"> Instagram </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/purva.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/purva-circ.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <!--p>
+                The problems that I work on lie at the intersection of Computer Vision, Machine Learning and Natural Language Processing. Specifically, I am interested in developing AI systems that
+              </p>
+              <p class="content">
+              <ul>
+                <li>can <b><i>perceive and reason</i></b> based on multimodal sensory information</li>
+                <li>are <b><i>interpretable</i></b> so that predictions made by such systems can be explained</li>
+                <li>are <b><i>transferable</i></b> so that they can be adapted across different domains with ease and limited supervision</li>
+              </ul>
+              </p>
+              <p>
+                Representative papers are <span class="highlight">listed under Publications</span>.
+              </p>-->
+              <p>
+                I am currently working on developing AI models that can learn about visual and language-based incongruities in nature, and leverage this information to induce creativity in potentially boring objects. I think exploring the creation of AI that can better understand human preferences through the use of common sense reasoning is interesting. More generally, I am interested in the broad areas of Computer Vision, Machine Learning, and Natural Language Processing.
+              </p>
+
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>News</heading>
+              <ul>
+                <li><strong>[June 2018]</strong> I was awarded the Best Presentation Award at ICCC'19!</li>
+                <li><strong>[June 2019]</strong> Presented our work on creating doodles or "TReATs" at the <a href="http://www.computationalcreativity.net/iccc2019/"> Tenth International Conference on Computational Creativity, ICCC 2019</a>.</li>
+                <li><strong>[May 2018]</strong> I will be interning at <a href="http://aibee.com/en">AiBee Corp.</a> at Palo Alto in summer 2019.</li>
+                <li><strong>[July 2018]</strong> I will be joining Georgia Tech as a Masters of Computer Science student in Fall 2018.</li>
+                <li><strong>[July 2018]</strong> Code for NAACL 2018 paper <a href="https://arxiv.org/abs/1704.08224">Punny Captions: Witty Wordplay in Image Descriptions</a> now available on <a href="https://github.com/purvaten/punny_captions">GitHub</a>.</li>
+                <li><strong>[May 2018]</strong> Code for ICCP 2016 paper <a href="https://ieeexplore.ieee.org/document/7492870">Blind dehazing using internal patch recurrence</a> now available on <a href="https://github.com/purvaten/blind-dehazing">GitHub</a>.</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+        <!--table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Achievements</heading>
+              <ul>
+                <li>Recognized as an <a href="https://iclr.cc/Conferences/2019/Awards">outstanding reviewer</a> for ICLR 2019!</li>
+                <li>Recognized to be among the top 20 percent highest scoring reviewers for NeurIPS 2018!</li>
+                <li>Awarded the College of Computing's MS Research Award at Georgia Tech!</li>
+                <li>Our team won <a href="http://www.vthacks.com/">VT Hacks 2017</a>, a <a href="https://mlh.io/"> Major League Hacking Event</a>, 2017!</li>
+                <li>Our undergraduate team, DTU-AUV, qualified for the semi-finals at <a href="http://www.auvsifoundation.org/2014-robosub-teams">AUVSI Robosub 2014</a>!</li>
+                <li>Awarded Merit Scholarships from 2012-2014 for undergraduate academic performance!</li>
+                <li>Selected for <a href="http://kvpy.iisc.ernet.in/main/index.htm">KVPY</a> and <a href="http://www.inspire-dst.gov.in/fellowship.html">INSPIRE</a> Fellowships, 2012 for undergraduate studies in basic sciences!</li>
+                <li>Placed among the top 1 percent students in the country in <a href="http://www.indapt.org/index.php/inphoipho">INPhO</a> 2012!</li>
+                <li>Selected for rigorous mathematical training camps conducted by mathematicians from Bhabha Atomic Research Center (<a href="http://www.barc.gov.in/">BARC</a>) and Indian Institute of Science (<a href="http://www.iisc.ac.in/">IISc</a>) in 2012!</li>
+                <li>Selected for <a href="http://www.csirhrdg.res.in/cpyls.htm">CSIR Programme on Youth Leadership in Science</a>, 2010!</li>
+
+              </ul>
+            </td>
+          </tr>
+        </table-->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Papers</heading> (<sup>*</sup> denotes equal contribution)
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- <heading>Publications</heading> -->
+          <tr>
+            <!--td width="30%"><img src="images/TREAT_teaser.png" alt="3DSP" width="200" height="160" style="border-style: none"-->
+            <td width="30%"><img src="images/TREAT_teaser.png" alt="3DSP" width="200" style="border-style: none">
+            <td valign="top" width="70%">
+              <a href="https://arxiv.org/abs/1903.07820">
+                      <papertitle>Trick or TReAT: Thematic Reinforcement for Artistic Typography</papertitle>
+              </a>
+            <br>
+            <strong>Purva Tendulkar</strong>,
+            Kalpesh Krishna,
+            Ramprasaath R. Selvaraju,
+            Devi Parikh
+            <br>
+              <em>ICCC</em>, 2019<br>
+              <a href="https://photos.google.com/share/AF1QipNFg9TYf2Wk6z6zKg3I3rT7jiWoH97cRVIQ-_JrZwIUUMqkyWHomVc1Lv1UGduraA/photo/AF1QipOm-e6jFA3Im9eiHt79R-A0j36CSVCoqSeU_VZG?key=dDFhdGlYUV9yVkUzOW5YaFlaeXdhMGQ1UHZ0QnZ3">video</a> /
+              <a href="data/TReAT-talk.pdf">slides</a> /
+              <a href="http://doodle.cloudcv.org/">demo</a> /
+              <a href="https://github.com/purvaten/doodling">code</a>
+            </td>
+          </tr>
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+                  <hr>
+                  <p align="center">
+                  <font>(Design and CSS courtesy: <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://abhoi.github.io/">Amlaan Bhoi</a>)</font>
+                  </p>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
