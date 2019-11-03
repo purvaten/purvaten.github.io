@@ -27,7 +27,8 @@ strong {
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
-  color: #e37222;
+  /* color: #e3722; */
+  color: #970000;
 }
 
 papertitle {
@@ -68,4 +69,8 @@ li:not(:last-child) {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.cool {
+  color: red;
 }
