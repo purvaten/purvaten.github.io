@@ -91,13 +91,14 @@ dance_video4 = [dance_video4[i] for i in sorted_idx]
 correlations = [correlations[i] for i in sorted_idx]
 numbeats = [numbeats[i] for i in sorted_idx]
 
-html_code = "<center><table border=1><tr><b><td>Sr. No.</td><td>Genre</td><td>Song Name</td><td>Audio</td><td>Duration (secs)</td><td>Number of beats</td><td>Music Matrix Downsize</td><td>Music Matrix Upsize</td><td>Dance Matrix Baseline 1</td><td>Dance Video Baseline 1</td><td>Dance Matrix Baseline 2</td><td>Dance Video Baseline 2</td><td>Dance Matrix Baseline 3</td><td>Dance Video Baseline 3</td><td>Dance Matrix Baseline 4</td><td>Dance Video Baseline 4</td></b></tr>"
+css = "<head><link rel='stylesheet' href='mycss.css'></head>"
+html_code = css + "<center><table border=1><thead><tr><b><th>Sr. No.</th><th>Genre</th><th>Song Name</th><th>Audio</th><th>Duration (secs)</th><th>Number of beats</th><th>Music Matrix Downsize</th><th>Music Matrix Upsize</th><th>Dance Matrix Baseline 1 (un-synced, random actions from LRS)</th><th>Dance Video Baseline 1 (un-synced, random actions from LRS)</th><th>Dance Matrix Baseline 2 (un-synced, left to right)</th><th>Dance Video Baseline 2 (un-synced, left to right)</th><th>Dance Matrix Baseline 3 (synced, left to right)</th><th>Dance Video Baseline 3 (synced, left to right)</th><th>Dance Matrix Baseline 4 (synced, random actions from LRS)</th><th>Dance Video Baseline 4 (synced, random actions from LRS)</th></b></tr></thead><tbody>"
 
 for i in range(len(songs)):
     row_data = "<td>%d.</td><td>%s</td><td>%s</td><td><audio controls><source src=%s type='audio/mpeg'></audio></td><td>%s</td><td>%d</td><td><img src=%s></td><td><img src=%s></td><td><figure><img src=%s><figcaption>Correlation-downsize = %f<br>Correlation-upsize = %f</figcaption></figure></td><td><video controls><source src=%s></video></td><td><figure><img src=%s><figcaption>Correlation-downsize = %f<br>Correlation-upsize = %f</figcaption></figure></td><td><video controls><source src=%s></video></td><td><figure><img src=%s><figcaption>Correlation-downsize = %f<br>Correlation-upsize = %f</figcaption></figure></td><td><video controls><source src=%s></video></td><td><figure><img src=%s><figcaption>Correlation-downsize = %f<br>Correlation-upsize = %f</figcaption></figure></td><td><video controls><source src=%s></video></td>" % (srno[i], genres[i], songnames[i], songs[i], durations[i], numbeats[i], music_matrix_downsize[i], music_matrix_upsize[i], dance_matrix1[i], correlations[i][0], correlations[i][4], dance_video1[i], dance_matrix2[i], correlations[i][1], correlations[i][5], dance_video2[i], dance_matrix3[i], correlations[i][2], correlations[i][6], dance_video3[i], dance_matrix4[i], correlations[i][3], correlations[i][7], dance_video4[i])
     html_code += "<tr>%s</tr>" % row_data
 
-html_code += "</table></center>"
+html_code += "</tbody></table></center>"
 
 with open('index.html', 'w') as f:
     f.write(html_code)
