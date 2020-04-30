@@ -1,0 +1,10 @@
+table {
+  text-align: left;
+  position: relative;
+}
+
+th {
+  background: white;
+  position: sticky;
+  top: 0;
+}
