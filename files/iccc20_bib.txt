@@ -1,0 +1,6 @@
+@inproceedings{tendulkar2020feel,
+  title={Feel The Music: Automatically Generating A Dance For An Input Song},
+  author={Tendulkar, Purva and Das, Abhishek and Kembhavi, Aniruddha and Parikh, Devi},
+  booktitle={International Conference on Computational Creativity (ICCC)},
+  year={2020}
+}
