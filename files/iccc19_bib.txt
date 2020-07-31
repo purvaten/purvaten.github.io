@@ -1,0 +1,6 @@
+@inproceedings{tendulkar2019trick,
+  title={Trick or TReAT : Thematic Reinforcement for Artistic Typography},
+  author={Tendulkar, Purva and Krishna, Kalpesh and Selvaraju, Ramprasaath R and Parikh, Devi},
+  booktitle={International Conference on Computational Creativity (ICCC)},
+  year={2019}
+}

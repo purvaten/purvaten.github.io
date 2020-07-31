@@ -1,0 +1,6 @@
+@article{selvaraju2020squinting,
+  title={Squinting at vqa models: Interrogating vqa models with sub-questions},
+  author={Selvaraju, Ramprasaath R and Tendulkar, Purva and Parikh, Devi and Horvitz, Eric and Ribeiro, Marco and Nushi, Besmira and Kamar, Ece},
+  booktitle={IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}
