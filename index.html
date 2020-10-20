@@ -27,32 +27,38 @@
     p,
     a {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px
+      font-size: 15px
+    }
+
+    abstract {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 13px;
     }
 
     strong {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     heading {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 24px;
+      font-size: 23px;
     }
 
     papertitle {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700
     }
 
     name {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 34px;
+      font-size: 33px;
     }
 
     #paper_img {
-      width: 200px;
+      width: 200;
+      height: 200;
     }
 
     .fade {
@@ -81,7 +87,7 @@
 </head>
 
 <body>
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
+  <table width="815" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -90,11 +96,10 @@
               <p align="center">
                 <name>Purva Tendulkar</name>
               </p>
-              <p>I am a Visiting Research Staff at <a href="https://ucsd.edu/">UC San Diego</a>, where I work with Prof. <a href="https://xiaolonw.github.io/">Xiaolong Wang</a>. My research focus is on computer vision and
-                self-supervised representation learning.</p>
+              <p>I am a Visiting Research Staff at <a href="https://ucsd.edu/">UC San Diego</a>, where I work with Prof. <a href="https://xiaolonw.github.io/">Xiaolong Wang</a> on computer vision and machine learning. My research focus is on modeling visual temporal dynamics.</p>
 
               <p>I completed my Master's in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a> in 2020 where I was
-                advised by Prof. <a href="https://www.cc.gatech.edu/~parikh/">Devi Parikh</a>. I have also collaborated with <a href="https://anikem.github.io/">Ani Kembhavi</a> at <a href="https://allenai.org/">AI2</a>.
+                advised by Prof. <a href="https://www.cc.gatech.edu/~parikh/">Devi Parikh</a>. My Master's Thesis is available <a href="https://smartech.gatech.edu/handle/1853/63699/">here</a>. I have also collaborated with <a href="https://anikem.github.io/">Ani Kembhavi</a> at <a href="https://allenai.org/">Allen AI</a>.
                 In 2018, I obtained my Bachelor's Degree in Computer Science from <a
                   href="https://www.coep.org.in/">College of Engineering Pune (COEP), India</a>.
               </p>
@@ -136,11 +141,13 @@
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
             <td width="25%" valign="top">
-              <img id="paper_img" src='images/sort20.png'>
+              <img id="paper_img" src='images/sort20.jpg'>
             </td>
             <td width="75%" valign="center">
-              <papertitle>SOrT-ing VQA Models: Improving Consistency via Gradient Alignment
-              </papertitle>
+              <a href="https://purvaten.github.io/">
+                <papertitle>SOrT-ing VQA Models: Improving Consistency via Gradient Alignment
+                </papertitle>
+              </a>
               <br>
               <a href="https://sameerdharur.github.io/">Sameer Dharur</a>,
               <strong>Purva Tendulkar</strong>,
@@ -148,37 +155,65 @@
               <a href="https://www.cc.gatech.edu/~parikh/">Devi Parikh</a>,
               <a href="https://ramprs.github.io/">Ramprasaath R. Selvaraju</a>
               <br>
-              <em><i>Preprint </i>(under review)</em>, 2020
+              <em>Preprint (under review)</em>, 2020
+              <!-- <em>NeurIPS Workshop on Interpretable Inductive Biases and Physically Structured Learning</em>, 2020 -->
               <br>
-              <a href="https://purvaten.github.io/">Contact for paper</a>
+              <a href="https://purvaten.github.io/">arXiv</a>
+              <br>
+              <p align="justify">
+                <abstract>
+                Recent research in Visual Question Answering (VQA) has revealed state-of-the-art models to be inconsistent in their understanding of the world -- they answer seemingly difficult questions correctly but get simpler associated sub-questions wrong. To address this, we present a gradient-based interpretability approach to determine the questions most strongly correlated with the reasoning question on an image, and use this to evaluate VQA models on their ability to identify the relevant sub-questions needed to answer a reasoning question. Next, we propose a contrastive gradient learning based approach, SOrT, and show improvements in model consistency and visual grounding.
+              </abstract>
+              </p>
             </td>
           </tr>
+          <!-- <tr>
+            <td width="25%" valign="top">
+              <img id="paper_img" src='images/gt.jpg'>
+            </td>
+            <td width="75%" valign="center">
+              <a href="https://smartech.gatech.edu/handle/1853/63699/">
+                <papertitle>Computational methods for creative inspiration in thematic typography and dance</papertitle>
+              </a>
+              <br>
+              <strong>Purva Tendulkar</strong>
+              <br>
+              <em><i>Masters Thesis</i></em> 2020
+              <br>
+              <a href="https://smartech.gatech.edu/handle/1853/63699">Dissertation</a>
+            </td>
+          </tr> -->
           <tr>
             <td width="25%" valign="top">
               <img id="paper_img" src='images/iccc20.jpg'>
             </td>
             <td width="75%" valign="center">
-              <papertitle>Feel The Music: Automatically Generating A Dance For An Input Song
-                <font color="red">
-                  <strong><i>(Oral)</i></strong>
-                </font>
-              </papertitle>
+              <a href="https://arxiv.org/pdf/2006.11905.pdf">
+                <papertitle>Feel The Music: Automatically Generating A Dance For An Input Song</papertitle>
+              </a>
+              <font color="red"><strong><i>(Oral)</i></strong></font>
               <br>
               <strong>Purva Tendulkar</strong>,
               <a href="https://abhishekdas.com/">Abhishek Das</a>,
               <a href="https://anikem.github.io/">Aniruddha Kembhavi</a>,
               <a href="https://www.cc.gatech.edu/~parikh/">Devi Parikh</a>
               <br>
-              <em><i>International Conference on Computational Creativity </i>(ICCC)</em>, 2020
+              <em>ICCC</em>, 2020
               <br>
-              <a href="https://arxiv.org/pdf/2006.11905.pdf">Paper</a>/
-              <a href="https://youtu.be/2oQuDTvE4To">Talk</a>/
-              <!--<a href="images/iccc20.m4v">Video</a>/-->
-              <a href="https://sites.google.com/view/dancing-agents">Dances</a>/
-              <a href="https://github.com/purvaten/feel-the-music">Code</a>/
-              <a href="https://tech.fb.com/ai-like-the-way-you-move-how-facebook-researchers-built-an-inspirational-dancing-machine/">Tech@Facebook article</a>/
-              <a href="https://www.engadget.com/facebook-ai-choreography-170023727.html">Press</a>/
-              <a href="files/iccc20_bib.txt">Bib</a>
+              <a href="https://arxiv.org/abs/2006.11905">arXiv</a> /
+              <a href="https://youtu.be/2oQuDTvE4To"> talk</a> /
+              <a href="images/iccc20.m4v"> video</a> /
+              <a href="https://sites.google.com/view/dancing-agents"> dances</a> /
+              <a href="https://github.com/purvaten/feel-the-music"> code</a> /
+              <a href="https://tech.fb.com/ai-like-the-way-you-move-how-facebook-researchers-built-an-inspirational-dancing-machine/"> Tech@Facebook article</a> /
+              <a href="https://www.engadget.com/facebook-ai-choreography-170023727.html"> press</a> /
+              <a href="files/iccc20_bib.txt">bib</a>
+              <br>
+              <p align="justify">
+                <abstract>
+                We present a general computational approach that enables a machine to generate a dance for any input music. We encode intuitive, flexible heuristics for what a 'good' dance is: the structure of the dance should align with the structure of the music. This flexibility allows the agent to discover creative dances. Human studies show that participants find our dances to be more creative and inspiring compared to meaningful baselines. We also evaluate how perception of creativity changes based on different presentations of the dance.
+                </abstract>
+              </p>
             </td>
           </tr>
           <tr>
@@ -186,11 +221,10 @@
               <img id="paper_img" src='images/cvpr20.jpg'>
             </td>
             <td width="75%" valign="center">
-              <papertitle>SQuINTing at VQA Models: Interrogating VQA Models with Sub-Questions
-                <font color="red">
-                  <strong><i>(Oral)</i></strong>
-                </font>
-              </papertitle>
+              <a href=https://arxiv.org/pdf/2001.06927.pdf">
+                <papertitle>SQuINTing at VQA Models: Interrogating VQA Models with Sub-Questions</papertitle>
+              </a>
+              <font color="red"><strong><i>(Oral)</i></strong></font>
               <br>
               <a href="https://ramprs.github.io/">Ramprasaath R. Selvaraju</a>,
               <strong>Purva Tendulkar</strong>,
@@ -200,39 +234,48 @@
               <a href="https://besmiranushi.com/">Besmira Nushi</a>,
               <a href="https://www.ecekamar.com/">Ece Kamar</a>
               <br>
-              <em><i>Computer Vision and Pattern Recognition </i>(CVPR)</em>, 2020
+              <em>CVPR</em>, 2020
               <br>
-              <a
-                href="https://arxiv.org/pdf/2001.06927.pdf">Paper</a>/
-              <a href="https://www.youtube.com/watch?v=v3HhAfj7WpU">Talk</a>/
-              <a href="https://www.microsoft.com/en-us/research/project/vqa-introspect/">Data</a>/
-              <a href="files/cvpr20_bib.txt">Bib</a>
+              <a href="https://arxiv.org/abs/2001.06927">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=v3HhAfj7WpU"> talk</a> /
+              <a href="https://www.microsoft.com/en-us/research/project/vqa-introspect/"> data</a> /
+              <a href="files/cvpr20_bib.txt"> bib</a>
+              <br>
+              <p align="justify">
+                <abstract>
+                We investigate the capabilities of VQA models for solving tasks that differ in nature and in complexity. We notice that existing VQA models have consistency issues -- they answer complex reasoning question correctly but fail on associated low-level perception sub-questions. We quantify the extent to which this phenomenon occurs by creating a new Reasoning split and collecting Sub-VQA, a new dataset consisting of associated perception sub-questions needed to effectively answer the main reasoning question. Additionally, we propose SQuINT approach which enforces models be right for the right reasons.
+                </abstract>
+              </p>
             </td>
           </tr>
           <tr>
             <td width="25%" valign="top">
-              <img id="paper_img" src='images/iccc19.png'>
+              <img id="paper_img" src='images/iccc19.jpg'>
             </td>
             <td width="75%" valign="center">
-              <papertitle>Trick or TReAT: Thematic Reinforcement for Artistic Typography
-                <font color="red">
-                  <strong><i>(Best Presentation Award)</i></strong>
-                </font>
-              </papertitle>
+              <a href="https://arxiv.org/pdf/1903.07820.pdf">
+                <papertitle>Trick or TReAT: Thematic Reinforcement for Artistic Typography</papertitle>
+              </a>
+              <font color="red"><strong><i>(Oral; Best Presentation Award)</i></strong></font>
               <br>
               <strong>Purva Tendulkar</strong>,
               <a href="https://martiansideofthemoon.github.io/">Kalpesh Krishna</a>,
               <a href="https://ramprs.github.io/">Ramprasaath R. Selvaraju</a>,
               <a href="https://www.cc.gatech.edu/~parikh/">Devi Parikh</a>
               <br>
-              <em><i>International Conference on Computational Creativity </i>(ICCC)</em>, 2019
+              <em><i>ICCC</i></em>, 2019
               <br>
-              <a
-                href="https://arxiv.org/pdf/1903.07820.pdf">Paper</a>/
-              <a href="https://www.youtube.com/watch?v=c9MvbeQkZwQ">Talk</a>/
-              <a href="http://doodle.cloudcv.org/">Demo</a>/
-              <a href="https://github.com/purvaten/treat">Code</a>/
-              <a href="files/iccc19_bib.txt">Bib</a>
+              <a href="https://arxiv.org/abs/1903.07820">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=c9MvbeQkZwQ"> talk</a> /
+              <a href="http://doodle.cloudcv.org/"> demo</a> /
+              <a href="https://github.com/purvaten/treat"> code</a> /
+              <a href="files/iccc19_bib.txt"> bib</a>
+              <br>
+              <p align="justify">
+                <abstract>
+                We present a computational approach for semantic reinforcement called TReAT. Given an input word (e.g. exam) and a theme (e.g. education), the individual letters of the input word are replaced by cliparts relevant to the theme which visually resemble the letters - adding creative context to the potentially boring input word. We use an unsupervised approach to learn a latent space to represent letters and cliparts and compute similarities between the two. Human studies show that participants can reliably recognize the word as well as the theme in our outputs (TReATs) and find them more creative compared to meaningful baselines.
+                </abstract>
+              </p>
             </td>
           </tr>
         </table>
