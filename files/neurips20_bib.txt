@@ -1,0 +1,6 @@
+@article{dharur2020sorting,
+  title={SOrT-ing VQA Models: Contrastive Gradient Learning for Improved Consistency},
+  author={Dharur, Sameer and Tendulkar, Purva and Batra, Dhruv and Parikh, Devi and Selvaraju, Ramprasaath R},
+  booktitle={NeurIPS workshop on Interpretable Inductive Biases and Physically Structured Learning},
+  year={2020}
+}
