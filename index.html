@@ -4,11 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Purva Tendulkar — CEO & founder building in social + AI (stealth). Previously ML research at Columbia; Apple Scholar; ex-Meta.">
+<meta property="og:title" content="Purva Tendulkar">
+<meta property="og:description" content="CEO & founder building in social + AI (stealth). Previously ML research at Columbia; Apple Scholar; ex-Meta.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://purvaten.github.io/images/purva.jpeg">
+<meta property="og:url" content="https://purvaten.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <title>Purva Tendulkar's homepage</title>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Purva Tendulkar",
+      "url":"https://purvaten.github.io/",
+      "image":"https://purvaten.github.io/images/purva.jpeg",
+      "jobTitle":"CEO & Founder",
+      "affiliation":{"@type":"Organization","name":"(Stealth startup)"},
+      "sameAs":[
+        "https://www.linkedin.com/in/purvaten/",
+        "https://github.com/purvaten",
+        "https://scholar.google.com/citations?hl=en&user=-7JsjAsAAAAJ",
+        "https://x.com/PurvaTendulkar"
+      ]
+    }
+    </script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
@@ -88,18 +112,18 @@
         }
 	    
 	    .paperitem span.new {
-    margin-left: 7px;
-    padding: 3px 5px;
-    color: white;
-    /* font-weight: 700; */
-    /* font-weight: 900; */
-    text-transform: uppercase;
-    /* letter-spacing: -0.05em; */
-    border-radius: 3px;
-    background-color: #F44336;
-		    align-self: center;
-    font-size: 80%;
-}
+            margin-left: 7px;
+            padding: 3px 5px;
+            color: white;
+            /* font-weight: 700; */
+            /* font-weight: 900; */
+            text-transform: uppercase;
+            /* letter-spacing: -0.05em; */
+            border-radius: 3px;
+            background-color: #F44336;
+                    align-self: center;
+            font-size: 80%;
+        }
 
         .paperitem > div {
             color: #6c757d !important;
@@ -126,6 +150,35 @@
                 margin: 0;
             }
         }
+
+        .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem; /* space between items */
+        }
+
+        .social-links a {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        }
+
+        .social-links img.social-icon {
+        height: 18px; /* adjust size */
+        width: auto;
+        margin-right: 6px;
+        vertical-align: middle;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        #researchList {
+        min-height: 200px; /* tweak to your content height */
+        }
     </style>
 </head>
 <body class="h-100 d-flex flex-column">
@@ -137,21 +190,18 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav" style="margin-left: auto">
-<li class="nav-item">
-<a class="nav-link" href="#bio">About</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#research">Research</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#teaching">Teaching</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#contact">Contact</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="files/Purva_Tendulkar_Resume.pdf" class="text-light">CV</a>
-</li>
+    <!-- <li class="nav-item">
+        <a class="nav-link" href="#writing">Writing</a>
+    </li> -->
+    <li class="nav-item">
+        <a class="nav-link" href="#research">Research</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#teaching">Teaching</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="files/Purva_Tendulkar_Resume.pdf">CV</a>
+    </li>
 </ul>
 </div>
 </nav>
@@ -159,231 +209,222 @@
 <main class="container flex-grow-1" style="padding-top:60px">
 <div class="row my-4" id="bio">
 <div class="col-md-auto">
-<img class="headshot" src="images/purva.jpeg" />
+<img class="headshot" src="images/purva.jpeg" loading="lazy" decoding="async" />
 </div>
 <div class="col-md mt-4 mt-md-0" style="align-self:center">
-<p>I am a fourth-year PhD candidate at Columbia University advised by <a href=http://www.cs.columbia.edu/~vondrick>Carl Vondrick</a>.
-   My research vision is to authentically emulate the varied facets of human behavior in our dynamic world. Concretely, I work on understanding and synthesizing humans by learning 3D representations of human-centric interactions.
-   My research is supported by the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2024">Apple Scholars in AI/ML PhD Fellowship</a>, and Columbia Presidential Fellowship.</p>
+    <p>👋 I am the CEO & founder of an early-stage startup in the social/AI space, currently in stealth. My work blends years of expertise in machine learning with a passion for building products that make digital interactions more authentic and meaningful.</p>
 
-<p>I completed my Masters in Computer Science from Georgia Tech in 2020 where I was advised by <a href=https://www.cc.gatech.edu/~parikh> Devi Parikh</a>.
-   During my Masters, I worked on creative AI (see my <a href=https://repository.gatech.edu/entities/publication/5375700c-6926-4f7e-8632-bd61a3ffdd02> Masters thesis</a>) and making vision-language models consistent.
-   I also collaborated with <a href=https://anikem.github.io> Ani Kembhavi</a> at AI2.
-   In 2018, I obtained my Bachelor's Degree in Computer Science from College of Engineering, Pune (COEP) in India.</p>
+    <p>👩‍🎓 Before founding my company, I was a PhD candidate in Machine Learning at Columbia University advised by <a href="http://www.cs.columbia.edu/~vondrick">Carl Vondrick</a>, where my research focused on generative models and human-AI interaction. I have published at top conferences (CVPR, ICCV, ECCV) and my work has been supported by the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2024">Apple Scholars in AI/ML PhD Fellowship</a> and the Columbia Presidential Fellowship.</p>
+    
+    <p>👩‍💻 I hold a Master's in Computer Science from Georgia Tech, where I worked on creative AI with <a href="https://deviparikh.com">Devi Parikh</a> and collaborated with <a href="https://anikem.github.io">Ani Kembhavi</a> at AI2, and a Bachelor's from COEP in India. I've also interned at University of Tübingen, Meta Reality Labs, UC San Diego, and AiBee. Outside of work, I enjoy practicing and listening to music, playing board games and hiking.</p>
 
-<p>I have been fortunate to intern at University of Tübingen (2024) with <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html">Gerard Pons-Moll</a>, Meta Reality Labs (2023) with <a href=https://sites.google.com/view/xuweipeng>Weipeng Xu</a>, UC San Diego (2020) with <a href=https://xiaolonw.github.io>Xiaolong Wang</a>, and AiBee (2019) with <a href=https://www.linkedin.com/in/chunhuigu>Chunhui Gu</a>.
-   At Columbia, I co-organize the Vision, Interaction, Graphics & Robotics (<a href=https://vigr.cs.columbia.edu/index.html>VIGR</a>) seminar.
-   In my free time, I enjoy listening to and practicing Indian classical music, hiking and playing boardgames.</p>
-
+    <hr class="my-3">
+    <p class="social-links">📭 I am best reached via email: purva dot tendulkar at gmail dot com. Social media: 
+        <a href="https://www.linkedin.com/in/purvaten/" target="_blank"><img src="images/logos/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+        <a href="https://github.com/purvaten" target="_blank"><img src="images/logos/github.svg" alt="GitHub" class="social-icon"></a>
+        <a href="https://scholar.google.com/citations?hl=en&user=-7JsjAsAAAAJ" target="_blank"><img src="images/logos/google_scholar.svg" alt="Google Scholar" class="social-icon"></a>
+        <a href="https://x.com/PurvaTendulkar" target="_blank"><img src="images/logos/x.svg" alt="X" class="social-icon"></a>
+    </p>
+    <hr class="my-3">
 </div>
 </div>
-
 
 <div class="row my-4" id="news">
 <div class="col-xl-10">
 <h4>News</h4>
 <ul style="list-style-type:square;">
-    <li>[May '24] Started an internship at <a href="https://tuebingen.ai/">University of Tübingen, Germany</a> 🇩🇪</li>
-    <li>[Mar '24] Successfully passed my <a href="https://www.cs.columbia.edu/education/phd/requirements/candidacy/">PhD Candidacy exam</a> (Committee: <a href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>, <a href="https://www.cs.columbia.edu/~nayar/">Shree Nayar</a>, <a href="https://www.cs.columbia.edu/~zemel/">Rich Zemel</a>) 📚</li>
+    <li>[Jun '25] Dropped out of PhD to build my startup 🚀</li>
     <li>[Dec '23] Awarded the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2024">Apple Scholars in AI/ML PhD Fellowship</a> </li>
-    <li>[May '23] Started an internship at <a href="https://about.meta.com/realitylabs/">Meta Reality Labs, Pittsburgh</a> 🤖</li>
     <li>[Apr '22] Attended the <a href="https://cra.org/cra-wp/grad-cohort-for-women/">CRA-WP Grad Cohort for Women 2022</a> in New Orleans 👩‍💻</li>
     <li>[Mar '21] Awarded the Columbia University Presidential Fellowship 🏛️</li>
 </ul>
 </div>
 </div>
 
-
-<div class="row my-4" id="research">
-<div class="col">
-<h4>Research</h4>
-<div>
-<ul style='list-style-type:none;margin-bottom: 0!important;padding-left: 0!important'>
-
-<li class="paperitem">
-    <img alt="" src="images/movi.gif" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>Populating Images with Moving 3D Humans</b>
-    <b>Purva Tendulkar</b>, István Sárándi, Gerard Pons-Moll, Carl Vondrick<br>
-    <a href="" class="mr-3">Paper</a>
-    <a href="https://movi.cs.columbia.edu/" class="mr-3">Project Page</a>
-    <a href="https://github.com/purvaten/movi" class="mr-3">Code (Coming soon)</a>
-    <br>
-    arXiv 2025
-    </div>
-</li>
-
-<li class="paperitem">
-    <img alt="" src="images/facet.gif" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>How Video Meetings Change Your Expression</b>
-    Sumit Sarin, Utkarsh Mall, <b>Purva Tendulkar</b>, Carl Vondrick<br>
-    <a href="https://arxiv.org/abs/2406.00955" class="mr-3">Paper</a>
-    <a href="https://cv.cs.columbia.edu/facet/" class="mr-3">Project Page</a>
-    <a href="https://github.com/stellargo/facet" class="mr-3">Code</a>
-    <br>
-    ECCV 2024
-    </div>
-</li>
-
-<li class="paperitem">
-    <img alt="" src="images/flex.png" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>FLEX: Full-Body Grasping Without Full-Body Grasps</b>
-    <b>Purva Tendulkar</b>, Dídac Surís, Carl Vondrick<br>
-    <a href="https://arxiv.org/abs/2211.11903" class="mr-3">Paper</a>
-    <a href="https://flex.cs.columbia.edu/" class="mr-3">Project Page</a>
-    <a href="https://youtu.be/5Uu9L-eBnX0" class="mr-3">Talk</a>
-    <a href="https://github.com/purvaten/FLEX" class="mr-3">Code</a>
-    <a href="files/FLEX_poster.pdf" class="mr-3">Poster</a>
-    <br>
-    CVPR 2023
-    </div>
-</li>
-
-<li class="paperitem">
-    <img alt="" src="images/latent.gif" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>Landscape Learning for Neural Network Inversion</b>
-    Ruoshi Liu, Chengzhi Mao, <b>Purva Tendulkar</b>, Hao Wang, Carl Vondrick<br>
-    <a href="https://arxiv.org/abs/2206.09027" class="mr-3">Paper</a>
-    <a href="https://medium.com/@ruoshi.liu/landscape-learning-for-neural-network-inversion-252b39120776">Blog Post</a>
-    <br>
-    ICCV 2023
-    </div>
-</li>
-
-<li class="paperitem">
-    <img alt="" src="images/realtalk.gif" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>Affective Faces for Goal-Driven Dyadic Communication</b>
-    Scott Geng*, Revant Teotia*, <b>Purva Tendulkar</b>, Sachit Menon, Carl Vondrick<br>
-    <a href="https://arxiv.org/abs/2301.10939" class="mr-3">Paper</a>
-    <a href="https://realtalk.cs.columbia.edu/" class="mr-3">Project Page</a>
-    <br>
-    arXiv 2023
-    </div>
-</li>
-
-<li class="paperitem">
-    <img alt="" src="images/occlusion.gif" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>Revealing Occlusions with 4D Neural Fields</b>
-    Basile Van Hoorick, <b>Purva Tendulkar</b>, Dídac Surís, Dennis Park, Simon Stent, Carl Vondrick<br>
-    <a href="https://arxiv.org/abs/2204.10916" class="mr-3">Paper</a>
-    <a href="https://occlusions.cs.columbia.edu/" class="mr-3">Project Page</a>
-    <a href="https://youtu.be/Q2S-ogGjcHo" class="mr-3">Talk</a>
-    <a href="https://github.com/basilevh/occlusions-4d" class="mr-3">Code</a>
-    <br>
-    CVPR 2022 <span style="color:red">(Oral)</span>
-    </div>
-</li>
-
-<li class="paperitem">
-    <img alt="" src="images/sort.jpg" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>SOrT-ing VQA Models: Contrastive Gradient Learning for Improved Consistency</b>
-    Sameer Dharur, <b>Purva Tendulkar</b>, Dhruv Batra, Devi Parikh, Ramprasaath R. Selvaraju<br>
-    <a href="https://arxiv.org/abs/2010.10038" class="mr-3">Paper</a>
-    <a href="https://youtu.be/LfQ69O9kAcY" class="mr-3">Talk</a>
-    <a href="https://github.com/sameerdharur/sorting-vqa" class="mr-3">Code</a>
-    <a href="files/sort_poster.pdf" class="mr-3">Poster</a>
-    <br>
-    NAACL 2021<br>
-    </div>
-</li>
-
-<li class="paperitem">
-    <img class="publogo float-left rounded g" width="100" src="images/dance.gif" alt="">
-    <div>
-    <b>Feel The Music: Automatically Generating A Dance For An Input Song</b>
-    <b>Purva Tendulkar</b>, Abhishek Das, Aniruddha Kembhavi, Devi Parikh<br>
-    <a href="https://arxiv.org/abs/2006.11905" class="mr-3">Paper</a>
-    <a href="https://youtu.be/2oQuDTvE4To" class="mr-3">Talk</a>
-    <a href="https://github.com/purvaten/feel-the-music" class="mr-3">Code</a>
-    <a href="https://www.engadget.com/facebook-ai-choreography-170023727.html" class="mr-3">Press Coverage</a>
-    <a href="https://tech.fb.com/ai-like-the-way-you-move-how-facebook-researchers-built-an-inspirational-dancing-machine/" class="mr-3">Tech@Meta Article</a>
-    <br>
-    ICCC 2020 <span style="color:red">(Oral)</span>
-    </div>
-</li>
-
-<li class="paperitem">
-    <img class="publogo float-left rounded g" width="100" src="images/squint.jpg" alt="">
-    <div>
-    <b>SQuINTing at VQA Models: Interrogating VQA Models with Sub-Questions</b>
-    Ramprasaath R. Selvaraju, <b>Purva Tendulkar</b>, Devi Parikh, Eric Horvitz, Marco Tulio Ribeiro, Besmira Nushi, Ece Kamar<br>
-    <a href="https://arxiv.org/abs/2001.06927" class="mr-3">Paper</a>
-    <a href="https://youtu.be/v3HhAfj7WpU" class="mr-3">Talk</a>
-    <a href="https://www.microsoft.com/en-us/research/project/vqa-introspect/" class="mr-3">Dataset</a>
-    <br>
-    CVPR 2020 <span style="color:red">(Oral)</span>
-    </div>
-</li>
-
-<li class="paperitem">
-    <img class="publogo float-left rounded g" width="100" src="images/doodle.jpg" alt="">
-    <div>
-    <b>Trick or TReAT: Thematic Reinforcement for Artistic Typography</b>
-    <b>Purva Tendulkar</b>, Kalpesh Krishna, Ramprasaath R. Selvaraju, Devi Parikh<br>
-    <a href="https://arxiv.org/abs/1903.07820" class="mr-3">Paper</a>
-    <a href="https://youtu.be/c9MvbeQkZwQ" class="mr-3">Talk</a>
-    <a href="https://github.com/purvaten/treat" class="mr-3">Code</a>
-    <br>
-    ICCC 2019 <span style="color:red">(Oral; Best Presentation Award)</span>
-    </div>
-</li>
-
-
-</ul>
+<!-- <div class="row my-5" id="writing">
+<div class="col-xl-10">
+    <h4>Writing & Talks</h4>
+    <ul class="list-unstyled mb-0">
+    <li class="mb-2"><a href="blog/boargames.html" class="mr-2">Board Games and the Truth They Tell</a> <span class="text-muted">— essay</span></li>
+    <li class="mb-2"><a href="blog/masks.html" class="mr-2">The Masks We Wear Online</a> <span class="text-muted">— essay</span></li>
+    <li class="mb-2"><a href="blog/contradictions.html" class="mr-2">Contradictions & Conscience</a> <span class="text-muted">— essay</span></li>
+    </ul>
 </div>
-</div>
-</div>
-</div>
-<div class="row my-4" id="teaching">
-<div class="col-xl-7">
-<h4>Teaching & Mentorship</h4>
+</div> -->
 
-<h6 class="text-muted mt-3">Courses</h6>
-<div class="class-listing">
-<span><b>Representation Learning (COMS 6998 - Fall '21, '22)</b><br>
-Teaching Assistant</span><span class="text-muted">Columbia University</span>
-</div>
+  <div class="row my-5" id="research">
+    <div class="col-xl-10">
+      <h4>Selected Research (Archive)</h4>
+      <p class="text-muted">Prior work in generative models, human-AI interaction, and 3D humans.</p>
+      <p>
+        <a class="btn btn-outline-secondary btn-sm" data-toggle="collapse" href="#researchList" role="button" aria-expanded="false" aria-controls="researchList">
+          Show publications
+        </a>
+        <a href="https://scholar.google.com/citations?hl=en&user=-7JsjAsAAAAJ" class="btn btn-link btn-sm">Google Scholar</a>
+      </p>
+      <div class="collapse" id="researchList">
+        <!-- keep your existing <ul> of papers here unchanged -->
+        <!-- (paste your current research <ul> content here) -->
+            <ul style='list-style-type:none;margin-bottom: 0!important;padding-left: 0!important'>
 
-<h6 class="text-muted mt-3">Mentorship</h6>
-<div class="class-listing">
-<span><b>Women in Science (Fall '21, Spring '22)</b><br></span><span class="text-muted">Columbia University</span>
-</div>
-<div class="class-listing">
-<span><b>BEARS Mentorship (Spring '22)</b><br></span><span class="text-muted">Barnard College</span>
-</div>
-<div class="class-listing">
-<span><b>Amazon-SURE Mentorship (Summer '22)</b><br></span><span class="text-muted">Amazon & Colubmia University</span>
-</div>
+                <li class="paperitem">
+                    <img alt="" src="images/research/movi.gif" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🎬 Populating Images with Moving 3D Humans</b>
+                    <b>Purva Tendulkar</b>, István Sárándi, Gerard Pons-Moll, Carl Vondrick<br>
+                    <a href="https://movi.cs.columbia.edu/" class="mr-3">Project Page</a>
+                    <br>
+                    Pre-print 2025
+                    </div>
+                </li>
+                
+                <li class="paperitem">
+                    <img alt="" src="images/research/facet.gif" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🖥️ How Video Meetings Change Your Expression</b>
+                    Sumit Sarin, Utkarsh Mall, <b>Purva Tendulkar</b>, Carl Vondrick<br>
+                    <a href="https://arxiv.org/abs/2406.00955" class="mr-3">Paper</a>
+                    <a href="https://cv.cs.columbia.edu/facet/" class="mr-3">Project Page</a>
+                    <a href="https://github.com/stellargo/facet" class="mr-3">Code</a>
+                    <br>
+                    ECCV 2024
+                    </div>
+                </li>
+                
+                <li class="paperitem" style="background-color: rgba(255, 255, 0, 0.3); width: 700px; height: 120px;">
+                    <img alt="" src="images/research/flex.png" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🤸 FLEX: Full-Body Grasping Without Full-Body Grasps</b>
+                    <b>Purva Tendulkar</b>, Dídac Surís, Carl Vondrick<br>
+                    <a href="https://arxiv.org/abs/2211.11903" class="mr-3">Paper</a>
+                    <a href="https://flex.cs.columbia.edu/" class="mr-3">Project Page</a>
+                    <a href="https://youtu.be/5Uu9L-eBnX0" class="mr-3">Talk</a>
+                    <a href="https://github.com/purvaten/FLEX" class="mr-3">Code</a>
+                    <a href="files/FLEX_poster.pdf" class="mr-3">Poster</a>
+                    <br>
+                    CVPR 2023
+                    </div>
+                </li>
+                
+                <li class="paperitem">
+                    <img alt="" src="images/research/latent.gif" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🧗 Landscape Learning for Neural Network Inversion</b>
+                    Ruoshi Liu, Chengzhi Mao, <b>Purva Tendulkar</b>, Hao Wang, Carl Vondrick<br>
+                    <a href="https://arxiv.org/abs/2206.09027" class="mr-3">Paper</a>
+                    <a href="https://medium.com/@ruoshi.liu/landscape-learning-for-neural-network-inversion-252b39120776">Blog Post</a>
+                    <br>
+                    ICCV 2023
+                    </div>
+                </li>
+                
+                <li class="paperitem">
+                    <img alt="" src="images/research/realtalk.gif" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🗣️ Affective Faces for Goal-Driven Dyadic Communication</b>
+                    Scott Geng*, Revant Teotia*, <b>Purva Tendulkar</b>, Sachit Menon, Carl Vondrick<br>
+                    <a href="https://arxiv.org/abs/2301.10939" class="mr-3">Paper</a>
+                    <a href="https://realtalk.cs.columbia.edu/" class="mr-3">Project Page</a>
+                    <br>
+                    arXiv 2023
+                    </div>
+                </li>
+                
+                <li class="paperitem">
+                    <img alt="" src="images/research/occlusion.gif" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🫣 Revealing Occlusions with 4D Neural Fields</b>
+                    Basile Van Hoorick, <b>Purva Tendulkar</b>, Dídac Surís, Dennis Park, Simon Stent, Carl Vondrick<br>
+                    <a href="https://arxiv.org/abs/2204.10916" class="mr-3">Paper</a>
+                    <a href="https://occlusions.cs.columbia.edu/" class="mr-3">Project Page</a>
+                    <a href="https://youtu.be/Q2S-ogGjcHo" class="mr-3">Talk</a>
+                    <a href="https://github.com/basilevh/occlusions-4d" class="mr-3">Code</a>
+                    <br>
+                    CVPR 2022 <span style="color:red">(Oral)</span>
+                    </div>
+                </li>
+                
+                <li class="paperitem">
+                    <img alt="" src="images/research/sort.jpg" loading="lazy" decoding="async" class="publogo float-left rounded g" width="100">
+                    <div>
+                    <b>🔁 SOrT-ing VQA Models: Contrastive Gradient Learning for Improved Consistency</b>
+                    Sameer Dharur, <b>Purva Tendulkar</b>, Dhruv Batra, Devi Parikh, Ramprasaath R. Selvaraju<br>
+                    <a href="https://arxiv.org/abs/2010.10038" class="mr-3">Paper</a>
+                    <a href="https://youtu.be/LfQ69O9kAcY" class="mr-3">Talk</a>
+                    <a href="https://github.com/sameerdharur/sorting-vqa" class="mr-3">Code</a>
+                    <a href="files/sort_poster.pdf" class="mr-3">Poster</a>
+                    <br>
+                    NAACL 2021<br>
+                    </div>
+                </li>
+                
+                <li class="paperitem" style="background-color: rgba(255, 255, 0, 0.3); width: 700px; height: 120px;">
+                    <img class="publogo float-left rounded g" width="100" src="images/research/dance.gif" loading="lazy" decoding="async" alt="">
+                    <div>
+                    <b>🎵 Feel The Music: Automatically Generating A Dance For An Input Song</b>
+                    <b>Purva Tendulkar</b>, Abhishek Das, Aniruddha Kembhavi, Devi Parikh<br>
+                    <a href="https://arxiv.org/abs/2006.11905" class="mr-3">Paper</a>
+                    <a href="https://youtu.be/2oQuDTvE4To" class="mr-3">Talk</a>
+                    <a href="https://github.com/purvaten/feel-the-music" class="mr-3">Code</a>
+                    <a href="https://www.engadget.com/facebook-ai-choreography-170023727.html" class="mr-3">Press Coverage</a>
+                    <a href="https://tech.fb.com/ai-like-the-way-you-move-how-facebook-researchers-built-an-inspirational-dancing-machine/" class="mr-3">Tech@Meta Article</a>
+                    <br>
+                    ICCC 2020 <span style="color:red">(Oral)</span>
+                    </div>
+                </li>
+                
+                <li class="paperitem">
+                    <img class="publogo float-left rounded g" width="100" src="images/research/squint.jpg" loading="lazy" decoding="async" alt="">
+                    <div>
+                    <b>🕵️ SQuINTing at VQA Models: Interrogating VQA Models with Sub-Questions</b>
+                    Ramprasaath R. Selvaraju, <b>Purva Tendulkar</b>, Devi Parikh, Eric Horvitz, Marco Tulio Ribeiro, Besmira Nushi, Ece Kamar<br>
+                    <a href="https://arxiv.org/abs/2001.06927" class="mr-3">Paper</a>
+                    <a href="https://youtu.be/v3HhAfj7WpU" class="mr-3">Talk</a>
+                    <a href="https://www.microsoft.com/en-us/research/project/vqa-introspect/" class="mr-3">Dataset</a>
+                    <br>
+                    CVPR 2020 <span style="color:red">(Oral)</span>
+                    </div>
+                </li>
+                
+                <li class="paperitem" style="background-color: rgba(255, 255, 0, 0.3); width: 700px; height: 120px;">
+                    <img class="publogo float-left rounded g" width="100" src="images/research/doodle.jpg" loading="lazy" decoding="async" alt="">
+                    <div>
+                    <b>👻 Trick or TReAT: Thematic Reinforcement for Artistic Typography</b>
+                    <b>Purva Tendulkar</b>, Kalpesh Krishna, Ramprasaath R. Selvaraju, Devi Parikh<br>
+                    <a href="https://arxiv.org/abs/1903.07820" class="mr-3">Paper</a>
+                    <a href="https://youtu.be/c9MvbeQkZwQ" class="mr-3">Talk</a>
+                    <a href="https://github.com/purvaten/treat" class="mr-3">Code</a>
+                    <br>
+                    ICCC 2019 <span style="color:red">(Oral; Best Presentation Award)</span>
+                    </div>
+                </li>
+            </ul>
+                
+      </div>
+    </div>
+  </div>
 
-</div>
-</div>
+
+  <div class="row my-5" id="teaching">
+    <div class="col-xl-10">
+      <h4>Teaching & Mentorship (Archive)</h4>
+      <p class="text-muted mb-2">Past roles at Columbia & Barnard.</p>
+      <ul class="list-unstyled text-muted mb-0">
+        <li class="mb-1"><b>Representation Learning</b> (COMS 6998, TA — Fall '21, '22)</li>
+        <li class="mb-1">Women in Science (mentor — '21-'22)</li>
+        <li class="mb-1">BEARS Mentorship (Barnard — Spring '22)</li>
+        <li class="mb-1">Amazon-SURE Mentorship (Summer '22)</li>
+      </ul>
+    </div>
+  </div>
 
 </main>
-<footer class=" bg-secondary text-white">
-<div class=" container py-4" id="contact" style="margin: 0 auto">
-<div class="row">
-<div class="col">
-<h4>CONTACT</h4>
-<span class="text-white-50">Email: </span>pt2578 [at] columbia [dot]  edu<br>
-<span class="text-white-50">Office: </span>
 
-<span>615 CEPSR</span> <br />
-<font size="-1">This website template was largely inspired by Mia Chiquier's.</font>
-</div>
-<div class="col">
-<h4>LINKS</h4>
-<a href="https://www.semanticscholar.org/author/Purva-Tendulkar/2163453087" class="text-light">Semantic Scholar</a><br />
-<a href="https://scholar.google.com/citations?hl=en&user=-7JsjAsAAAAJ" class="text-light">Google Scholar</a><br />
-<a href="https://github.com/purvaten" class="text-light">GitHub</a><br />
-<a href="https://www.linkedin.com/in/purvaten/" class="text-light">LinkedIn</a><br />
-
+<footer class="bg-dark text-white py-3 mt-5">
+<div class="container text-center">
+    <small class="text-white-50">© 2025 Purva Tendulkar</small>
 </div>
 </footer>
+
 </body>
 </html>
