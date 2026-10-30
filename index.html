@@ -54,7 +54,7 @@
     background: var(--linen);
     color: var(--dark-muted);
     font-family: var(--sans);
-    font-size: 15px;
+    font-size: 16.5px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
@@ -64,7 +64,7 @@
 
   /* photo + links on the left, name / title / bio on the right; top-aligned with a modest, screen-relative top margin */
   .page {
-    max-width: 860px;
+    max-width: 900px;
     margin: 0 auto;
     padding: clamp(48px, 9vh, 96px) 32px 64px;
     display: grid;
@@ -78,7 +78,7 @@
   .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
   .links a {
     display: inline-block;
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1;
     padding: 6px 9px;
     border: 1px solid var(--stone);
@@ -89,34 +89,34 @@
   }
   .links a:hover { border-color: var(--espresso); }
   .links a::after { content: " \2197"; color: var(--muted); }
-  .contact { font-size: 12.5px; color: var(--dark-muted); justify-self: start; }
+  .contact { font-size: 13.5px; color: var(--dark-muted); justify-self: start; }
 
-  .main { min-width: 0; max-width: 600px; }
-  h1 { font-family: var(--serif); font-weight: 400; font-size: 44px; line-height: 1.05; letter-spacing: -0.01em; color: var(--espresso); margin: 0 0 8px; }
-  .title { font-family: var(--serif); font-size: 22px; line-height: 1.25; color: var(--espresso); margin: 0 0 22px; }
+  .main { min-width: 0; max-width: 630px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 34px; line-height: 1.1; letter-spacing: -0.005em; color: var(--espresso); margin: 0 0 6px; }
+  .title { font-family: var(--serif); font-size: 19px; line-height: 1.3; color: var(--espresso); margin: 0 0 20px; }
   .title a { text-decoration-color: var(--muted); }
   .bio p { margin: 0 0 12px; }
   .bio p:last-child { margin-bottom: 0; }
 
   /* writing: small labelled lists, two columns, like a team page's media list */
-  .work { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--stone); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 32px; font-size: 13.5px; line-height: 1.45; }
-  .work h2 { font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .work { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--stone); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 32px; font-size: 14.5px; line-height: 1.45; }
+  .work h2 { font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
   .work ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
   .work .yr { color: var(--muted); font-variant-numeric: tabular-nums; }
   .work .col { display: grid; gap: 24px; align-content: start; }
 
   /* phone: small photo beside the name and title, then bio, links, email, writing */
   @media (max-width: 760px) {
-    body { font-size: 15px; }
+    body { font-size: 16.5px; }
     .page { grid-template-columns: 72px minmax(0, 1fr); gap: 0 16px; padding: 32px 20px 48px; }
     .side, .main { display: contents; }
     .portrait { grid-column: 1; grid-row: 1 / span 2; width: 72px; border-radius: 4px; }
-    h1 { grid-column: 2; grid-row: 1; align-self: end; font-size: 30px; margin: 0 0 4px; }
-    .title { grid-column: 2; grid-row: 2; align-self: start; font-size: 17px; margin: 0; }
+    h1 { grid-column: 2; grid-row: 1; align-self: end; font-size: 31px; margin: 0 0 4px; }
+    .title { grid-column: 2; grid-row: 2; align-self: start; font-size: 18px; margin: 0; }
     .bio { grid-column: 1 / -1; grid-row: 3; margin-top: 24px; }
     .links { grid-column: 1 / -1; grid-row: 4; margin-top: 20px; }
     .contact { grid-column: 1 / -1; grid-row: 5; margin-top: 12px; }
-    .work { grid-column: 1 / -1; grid-row: 6; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 28px; }
+    .work { grid-column: 1 / -1; grid-row: 6; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 28px; font-size: 15.5px; }
   }
 </style>
 </head>
