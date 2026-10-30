@@ -62,16 +62,15 @@
   a { color: var(--espresso); text-decoration: underline; text-decoration-color: var(--stone); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: text-decoration-color .2s; }
   a:hover { text-decoration-color: var(--espresso); }
 
-  /* photo + links on the left, name / title / bio on the right; fits one screen on desktop */
+  /* photo + links on the left, name / title / bio on the right; top-aligned with a modest, screen-relative top margin */
   .page {
-    min-height: 100%;
     max-width: 860px;
     margin: 0 auto;
-    padding: 64px 32px;
+    padding: clamp(48px, 9vh, 96px) 32px 64px;
     display: grid;
     grid-template-columns: minmax(0, 190px) minmax(0, 1fr);
     gap: 48px;
-    align-content: center;
+    align-items: start;
   }
 
   .side { display: grid; gap: 16px; align-content: start; }
@@ -106,13 +105,18 @@
   .work .yr { color: var(--muted); font-variant-numeric: tabular-nums; }
   .work .col { display: grid; gap: 24px; align-content: start; }
 
+  /* phone: small photo beside the name and title, then bio, links, email, writing */
   @media (max-width: 760px) {
-    .page { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 40px 16px 48px; align-content: start; }
-    .side { max-width: 150px; }
-    .work { grid-template-columns: minmax(0, 1fr); }
-    h1 { font-size: 36px; }
-    .title { font-size: 20px; margin-bottom: 18px; }
     body { font-size: 15px; }
+    .page { grid-template-columns: 72px minmax(0, 1fr); gap: 0 16px; padding: 32px 20px 48px; }
+    .side, .main { display: contents; }
+    .portrait { grid-column: 1; grid-row: 1 / span 2; width: 72px; border-radius: 4px; }
+    h1 { grid-column: 2; grid-row: 1; align-self: end; font-size: 30px; margin: 0 0 4px; }
+    .title { grid-column: 2; grid-row: 2; align-self: start; font-size: 17px; margin: 0; }
+    .bio { grid-column: 1 / -1; grid-row: 3; margin-top: 24px; }
+    .links { grid-column: 1 / -1; grid-row: 4; margin-top: 20px; }
+    .contact { grid-column: 1 / -1; grid-row: 5; margin-top: 12px; }
+    .work { grid-column: 1 / -1; grid-row: 6; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 28px; }
   }
 </style>
 </head>
